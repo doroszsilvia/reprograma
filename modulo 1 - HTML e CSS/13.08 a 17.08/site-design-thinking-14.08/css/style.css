@@ -1,0 +1,104 @@
+/* GERAL */
+* {
+    box-sizing: border-box; 
+    /* Qual vai ser o tamanho dos box? O border-box significa que propriedades não vão afetar o tamanho do objeto, ex: padding*/
+}
+
+body {
+    margin: 0;
+    font-family: 'Lato', Arial, Helvetica, sans-serif;
+    color: #5D1277;
+}
+
+p {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+a {
+    text-decoration: none;
+    text-align: center;
+    font-size: 15px;
+}
+
+/* HEADER */
+
+.header {
+    text-align: center;
+    margin: 40px 0px;
+}
+
+/* PAGES LINKS*/
+
+.page-links {
+    width: 47%;
+    display: inline-block;
+}
+
+.page-links__position {
+    width: 360px;
+    float: right;
+}
+
+.page-links__position img {
+    width: 360px;
+}
+
+/* PAGE LINKS BUTTONS */
+
+.btn {
+    display: block;
+    width: 260px;
+    padding: 10px 10px;
+    margin: 15px auto;
+    border: 1px solid #5D1277;
+    border-radius: 5px;
+    transition: all 1s;
+}
+
+.btn_purple {
+    background-color: #5D1277;
+    color: white;
+}
+
+.btn_purple:hover {
+    border: 1px solid rgb(136, 45, 167);
+    background-color: rgb(136, 45, 167);
+}
+
+.btn_transparent {
+    color: #5D1277;
+}
+
+.btn_transparent:hover {
+    border: 1px solid rgb(136, 45, 167);
+    color: rgb(136, 45, 167);
+}
+
+/* PAGE CONTENT */
+
+.page-content {
+    width: 51%;
+    display: inline-block;
+    vertical-align: top;
+    text-align: left;
+    padding-left: 80px;
+}
+
+.page-content__title_first {
+    margin: 0px;
+}
+
+.page-content__title_second {
+    margin-top: 40px;
+}
+
+/* PAGE CONTENT LISTS */
+
+.page-content__list {
+    padding-left: 15px;
+}
+
+.page-content__list li {
+    margin-bottom: 25px;
+}

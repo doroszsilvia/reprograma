@@ -1,0 +1,36 @@
+* {
+    box-sizing: border-box;
+    
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+section {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.article {
+    display: inline-block;
+    width: 49%;
+    padding: 0 50px;
+}
+
+/*
+.article__description {
+    font-size: 17px;
+    font-weight: bolder;
+}
+*/
+
+/* Seletor que pega o primeiro filho de uma tag*/
+.article h2:first-child {
+    color: blue;
+}
+
+/* Pega a segunda child de uma tag*/
+.article h3:nth-child(2) {
+    color: red;
+}

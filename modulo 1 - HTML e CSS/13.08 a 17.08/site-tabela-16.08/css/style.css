@@ -1,0 +1,119 @@
+/* GERAL */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+    color: #4A4A4A;
+}
+
+table {
+    margin: 60px auto;
+    border-collapse: collapse; /* Para ficar com uma linha de borda*/
+    border: 1px solid #D8D8D8;
+    text-align: center;
+}
+
+/* TABLE HEADER */
+.empty-space {
+    border-top: 1px solid white;
+    border-left: 1px solid white;
+    border-right: 1px solid #8D8D8D;
+}
+
+/* TABLE HEADER LINE 1*/
+.table-header_line1 {
+    color: white;
+    font-size: 13px;
+    width: 200px;
+}
+
+.table-header__line1_item1 {
+    background-color: #0078C1;
+    padding: 10px 10px;
+    font-weight: lighter;
+}
+
+.table-header__line1_item2 {
+    background-color: #009E2C;
+    padding: 10px 20px;
+    font-weight: lighter;
+    border-right: 1px solid #8D8D8D;
+}
+
+/* TABLE HEADER LINE 2*/
+.table-header__line2__item {
+    width: 180px;
+    height: 120px;
+}
+
+.table-header__line2__item p {
+    margin-top: 0px;
+    font-weight: bolder;
+}
+
+/* TABLE HEADER BUTTONS */
+.btn {
+    width: 80px;
+    padding: 10px;
+    border-radius: 5px;
+    text-transform: uppercase;
+    font-size: 12px;
+    margin: auto;
+    text-align: center;
+    text-decoration: none;
+}
+
+.btn-buy {
+    display: block;
+    background-color: #FF5406;
+    color: white;
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, .3);
+}
+
+/* TABLE BODY */
+tbody tr td:first-child {
+    text-align: left;
+    border-left: 1px solid white;
+}
+
+tbody tr td {
+    font-size: 14px;
+    padding: 5px 0px 5px 10px;
+    width: 200px;
+    height: 25px;
+}
+
+/* CHECK SYMBOLS */
+.check {
+    font-size: 20px;
+}
+
+.check_blue {
+    color: #0078C1;
+}
+
+.check_green {
+    color: #009E2C;
+}
+
+/* LAYOUT */    
+tbody tr:nth-child(odd) {
+    background-color: #F5F5F5;
+}   
+
+.border-left-right {
+    border-left: 1px solid #8D8D8D;
+    border-right: 1px solid #8D8D8D;
+}
+
+.table-body_first-line {
+    border-bottom: none;
+}
+
+.table-body_other-lines {
+    border-bottom: none;
+    border-top: none;
+}

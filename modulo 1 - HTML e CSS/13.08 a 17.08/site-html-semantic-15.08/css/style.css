@@ -12,6 +12,10 @@ a, h3, p {
     color: #4A4A4A;
 }
 
+a {
+    text-decoration: none;
+}
+
 /* LAYOUT */
 .col-1-5 {
     display: inline-block;
@@ -24,10 +28,14 @@ a, h3, p {
 }
 
 /* HEADER */
-
 .blog-header {
     padding: 8px 0px;
     box-shadow: 10px 0px 5px rgba(0, 0, 0, .4);
+    background-color: white;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 100;
 }
 
 .blog-header__title {
@@ -43,24 +51,27 @@ a, h3, p {
     font-weight: 600;
 }
 
+/* NAVEGAÇÃO */
+
 .blog-header__nav {
     display: inline-block;
     width: 49%;
-    padding: 0px 90px;
+    padding: 0px 0px;
 }
 
-.nav-link {
+.menu-link {
     text-transform: uppercase;
-    text-decoration: none;
+    list-style-type: none;
+    display: inline;
     font-size: 14px;
-    padding: 0px 30px;
+    margin: 0px 30px;
 }
 
 /* CATEGORY */
 
 .blog-category {
     text-align: center;
-    margin: 30px 0 20px 0;
+    padding: 100px 0 20px 0;
 }
 
 /* o > seletor pega os h3 filhos DIRETOS da classe blog-category */
@@ -68,7 +79,7 @@ a, h3, p {
     font-weight: 500;
     font-size: 17px;
     text-transform: uppercase;
-    color: #9013FE
+    color: #9013FE;
 }
 
 /* ASIDE */
@@ -129,4 +140,8 @@ main {
     font-size: 15px;    
     margin: 0; 
     color: white; 
+}
+
+.blog-footer__copyright a {
+    color: white;
 }

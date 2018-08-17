@@ -1,0 +1,92 @@
+/* GERAL */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+}
+
+/* FORM */
+.formulario {
+    width: 60%;
+    margin: 0 auto;
+    padding: 40px 0px;
+}
+
+.form-section {
+    margin: 20px 0px;
+}
+
+.form-section__label, .form-section__input{
+    display: inline-block;
+    width: 49%;
+}
+
+.form-section__label {
+    padding-right: 20px;
+    vertical-align: top;
+    text-align: right;
+}
+
+/* LABEL AND SUBLABEL */
+.form-section__label p {
+    margin: 0;
+}
+
+p.detail {
+    font-size: 12px;
+    margin-top: 5px;  
+    color: #999;
+}
+
+/* INPUTS */
+input[type="text"], input[type="password"], input[type="number"], select, textarea, select {
+    border: 1px solid #CCC;
+    border-radius: 5px;
+    font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+    font-size: 15px;
+}
+
+input[type="text"], input[type="password"], select {
+    width: 270px;
+    height: 30px;
+}
+
+textarea {
+    width: 270px;
+    height: 140px;
+    resize: none;
+}
+
+input[type="number"] {
+    width: 60px;
+    height: 30px;
+}
+
+.form-section__input input {
+    margin: 18px 0px;
+}
+
+.form-section__input input:first-child {
+    margin-top: 0px;
+}
+
+/* SUBMIT INPUT */
+input[type="submit"] {
+    border: 1px solid #3A006D;
+    border-radius: 5px;
+    background-color: #9013FE;
+    width: 100px;
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 10px 20px;
+    margin-left: 50%;
+}
+
+/* OBRIGADA PAGE */
+.obrigada-page__h1 {
+    text-align: center;
+}

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Formulários</title>
+        <meta charset="UTF-8">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+    </head>
+    <body>
+        <div class="formulario">
+            <form action="obrigada.html" method="GET">
+
+                <section class="form-section">
+                    <label for="texto" class="form-section__label">
+                        <p>Texto</p>
+                        <p class="detail">Text input</p>
+                    </label>
+                    <input type="text" name="texto" required>
+                </section>
+
+                <section class="form-section">
+                    <label for="senha" class="form-section__label">
+                        <p>Senha</p>
+                        <p class="detail">Password</p>
+                    </label>
+                    <input type="password" name="senha" required>
+                </section>
+
+                <section class="form-section">
+                    <div class="form-section__label">
+                        <p>Escolha uma ou múltiplas opções</p>
+                        <p class="detail">Checkboxes</p>
+                    </div>
+
+                    <div class="form-section__input">
+                        <input type="checkbox" name="caracteristica" value="mulher" checked> <label for="caracteristica">Mulher</label>
+                        <br>
+                        <input type="checkbox" name="caracteristica" value="poderosa"> <label for="caracteristica">Poderosa</label>
+                        <br>
+                        <input type="checkbox" name="caracteristica" value="linda"> <label for="caracteristica">Linda</label>
+                        <br>
+                        <input type="checkbox" name="caracteristica" value="maravilhosa"> <label for="caracteristica">Maravilhosa</label>
+                    </div> 
+                </section>
+
+                <section class="form-section">
+                    <div class="form-section__label">
+                        <p>Escolha uma opção</p>
+                        <p class="detail">Radio buttons</p>
+                    </div>
+
+                    <div class="form-section__input">
+                        <input type="radio" name="poder" value="super força" checked> <label for="poder">Super força</label>
+                        <br>
+                        <input type="radio" name="poder" value="invisibilidade"> <label for="poder">Ser invisível</label>
+                        <br>
+                        <input type="radio" name="poder" value="ler mentes"> <label for="poder">Ler mentes</label>
+                        <br>
+                        <input type="radio" name="poder" value="super velocidade"> <label for="poder">Super velocidade</label>
+                    </div>
+                </section>
+
+                <section class="form-section">
+                    <label for="comida" class="form-section__label">
+                        <p>Selecione dropdown</p>
+                        <p class="detail">Select dropdown</p>
+                    </label>
+                    <select name="comida" required>
+                        <option selected disabled></option>
+                        <option value="hamburger">Hamburguer</option>
+                        <option value="pizza">Pizza</option>
+                        <option value="sushi">Sushi</option>
+                    </select>
+                </section>
+
+                <section class="form-section">
+                    <label for="numero" class="form-section__label">
+                        <p>Escolha um valor</p>
+                        <p class="detail">Multiple values</p>
+                    </label>
+                    <input type="number" name="numero" min="1" max="5" required>
+                </section>
+
+                <section class="form-section">
+                    <label for="comentario" class="form-section__label">
+                        <p>Comentários</p>
+                        <p class="detail">Comments</p>
+                    </label>
+                    <textarea name="comentario" maxlength="50" required></textarea>
+                </section>
+
+                <section class="form-section">
+                    <input type="submit" value="Submit">
+                </section>
+
+            </form>
+        </div>
+
+    </body>
+</html>

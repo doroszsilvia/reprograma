@@ -1,0 +1,43 @@
+@media (max-width: 420px){
+
+    /* GERAL */
+    .main {
+        width: 100vw;
+    }
+
+    /* ABOUT BEYONCE */
+    .about-beyonce {
+        padding: 0 5%;
+        display: inline-block;
+    }
+
+    .about-beyonce__img {
+        display: inline-block;
+        width: 30%;
+        min-width: 80px;
+    }
+
+    .about-beyonce__text {
+        display: inline-block;
+        width: 69%;
+        vertical-align: top;
+    }
+
+    .about-beyonce__text h1 {
+        font-size: 17px;
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    .about-beyonce__text p{
+        display: inline-block;
+        font-size: 15px;
+        margin: 0;
+    }
+
+    .social-images__img {
+        width: 20%;
+        min-width: 80px;
+        padding: 40px 20px 0 20px;
+    }
+}

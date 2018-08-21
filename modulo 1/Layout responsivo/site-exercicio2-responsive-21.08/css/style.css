@@ -1,0 +1,63 @@
+/* GERAL */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    /* rgb(red, green, blue)*/
+    /* rgba o último é para transparência, de 0 a 1 */
+    background-color: rgba(179, 130, 186, .36);
+    /* Fontes que estão instaladas no sistema não precisa de aspas, as outras precisam */
+    font-family: 'Lato', Arial, Helvetica, sans-serif;
+}
+
+.content-text__title, .content-text__description, .btn-group {
+    text-align: right;
+}
+
+a {
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.half-column {
+    width: 49%;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+/* CONTENT TEXT */
+.content-text__title {
+    margin: 0;
+}
+
+.content-text__description {
+    margin: 6% 0 6% 30%;
+    width: 70%;
+}
+
+.btn-group {
+    margin-top: 3%;
+}
+
+.btn {
+    padding: 10px;
+    margin: 15px 15px 0px 0px;
+    border-radius: 4px;
+    border: 1px solid purple;
+}
+
+.btn-purple {
+    background-color: purple;
+    color: white;
+}
+
+.btn-transparent {
+    color: purple;
+}
+
+/* CONTENT IMAGE */
+.content-img__img {
+    padding: 50px;
+}

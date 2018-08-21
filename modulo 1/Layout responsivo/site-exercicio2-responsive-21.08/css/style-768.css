@@ -1,0 +1,40 @@
+@media (max-width: 768px) {
+    
+    /* CONTENT TEXT */
+    .content-text__title {
+        text-align: center;
+    }
+
+    .content-text {
+        width: 100%;
+        padding: 0 15%;
+        margin: 10% 0;
+    }
+
+    .content-text__description {
+        margin: 40px 0;
+        width: 100%;
+        text-align: justify;
+    }
+
+    /* CONTENT IMAGE */
+    .content-img {
+        width: 100vw;
+        padding: 0 10%;
+    }
+
+    .content-img__img {
+        width: 45%;
+        min-width: 100px;
+        display: block;
+        margin: -15vw auto;
+        transform: rotate(270deg); 
+        padding: 0px;
+    }
+
+    /* BUTTONS */
+    .btn-group {
+        text-align: left;
+    }
+
+}

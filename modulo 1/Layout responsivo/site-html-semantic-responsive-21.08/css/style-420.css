@@ -1,0 +1,49 @@
+@media (max-width: 420px) {
+
+    .blog-author, .blog-header__nav {
+        display: none;
+    }
+
+    /* HEADER */
+    .blog-header__title {
+        padding: 0px 40px;
+    }
+
+    /* NAV */
+    .hamburguer-menu {
+        display: inline-block;
+        margin-left: 35%;
+        width: 25px;
+        height: 25px;
+    }
+
+    .hamburguer-menu__img {
+        width: 25px;
+        height: 25px;
+    }
+
+    /* POST */
+    .main {
+        width: 90%;
+        margin: 0 5%;
+    }
+
+    .blog-post {
+        padding: 2% 4%;
+        border: 1px solid rgba(0, 0, 0, .2);
+    }
+
+    .blog-post__title {
+        font-size: 31px;
+    }
+
+    .blog-post > p {
+        font-size: 18px;
+    }
+
+    .blog-post__img {
+        width: 100%;
+        height: auto;
+    }
+
+}

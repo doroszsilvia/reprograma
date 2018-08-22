@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Agência de viagens Mundo Gelado</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, inital-scale=1">
+        <!-- Importing google fonts -->
+        <link href="https://fonts.googleapis.com/css?family=Nunito|Varela+Round" rel="stylesheet">
+        <!-- External style sheets -->
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <!-- Font-Awesome -->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+    </head>
+    <body>
+
+        <nav class="main-nav col-12">
+            <ul class="main-nav__list col-4">
+                <li class="nav-link col-3">
+                    <a href="#sobre" class="nav-a">Sobre</a>
+                </li>
+                <li class="nav-link col-3">
+                    <a href="#destinos" class="nav-a">Destinos</a>
+                </li>
+                <li class="nav-link col-3">
+                    <a href="#" class="nav-a">Contato</a>
+                </li>
+            </ul>
+        </nav>
+
+        <header class="main-header">
+            <main class="main-header__content">
+                <h1 class="main-header__content__title col-12">Mundo Gelado</h1>
+
+                <p class="main-header__content__description col-12">A agência de viagens que te leva aos lugares mais congelantes do planeta.</p>
+
+                <a href="#" class="main-header__content_link btn">Quero saber mais</a>
+            </main>
+        </header>
+
+        <article class="sobre" id="sobre">
+            <h2 class="sub-title">A agência Mundo gelado</h2>
+            <p class="sobre__description">Nosso diferencial é te levar para conhecer as mais lindas e geladas paisagens no nosso planeta, com conforto e segurança. 
+            <br>
+            Nossos pacotes são completos e oferecem uma experiência inesquecível para você.
+            <br>
+            Veja abaixo nossos destinos disponíveis, e se tiver alguma dúvida ou sugestão, entre em contato com a gente.</p>
+        </article>
+
+        <article class="destino" id="destinos">
+            <section class="siberia">
+
+                <img src="img/siberia.jpg" alt="Foto da Sibéria" class="siberia__img">
+
+                <div class="siberia__content">
+                    <h3 class="siberia__title">Sibéria</h3>
+                    <p class="siberia__description">O clima varia entre o clima polar e o clima continental. Na Sibéria situa-se o local habitado mais frio do mundo, a aldeia de Oymyakon.</p>
+                </div>
+
+            </section>
+
+            <section class="outros-destinos">
+
+                <img src="img/groenlandia.jpg" alt="Foto da Groenlândia" class="outros-destinos__img">
+
+                <div class="outros-destinos__content left-align">
+                    <h3 class="outros-destinos__title">Groenlândia</h3>
+                    <p class="groenlandia__description">A Groenlândia é a maior ilha do mundo e tem mais de 44 000 km de linha de costa. A população é escassa, confinada a pequenos povoados na costa. A ilha tem a segunda maior reserva de gelo do mundo, apenas ultrapassada pela Antártida.</p>
+                    <hr class="hr-destino">
+                </div>
+
+                <img src="img/antartida.jpg" alt="Foto da Antártida" class="outros-destinos__img antartida__img">
+
+                <div class="outros-destinos__content right-align">
+                    <h3 class="outros-destinos__title">Antártida</h3>
+                    <p class="antartida__description">É o continente mais frio, mais seco, com a maior média de altitude e de maior índice de ventos fortes do planeta.[1] A temperatura mais baixa da Terra (-89,2 °C) foi registrada na Antártica, sendo a temperatura média na costa, durante o verão, de -10 °C; no interior do continente, é de -40 °C</p>
+                    <hr class="hr-destino">
+                </div>
+                
+            </section>
+        </article>
+
+        <article class="florest-background">
+            <section class="aonde-estamos">
+                <h2 class="sub-title">
+                    <i class="far far-paper-plane fa-2x"></i>
+                    Aonde estamos</h2>
+                    <iframe class="iframe-map" src="https://maps.google.com/maps?width=720&amp;height=600&amp;hl=en&amp;q=Avenida%20Paulista%2C%201374+(Esta%C3%A7%C3%A3o%20Hack)&amp;ie=UTF8&amp;t=&amp;z=18&amp;iwloc=B&amp;output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+            </section>
+            <section class="contato">
+                <h2 class="sub-title">Fale com a gente</h2>
+                <form action="" method="POST" class="formulario">
+
+                    <label for="nomeCompleto">Nome completo</label>
+                    <input type="text" name="nomeCompleto" class="formulario__input" placeholder="Fulano de Tal">
+                    <hr class="hr-form">
+
+                    <label for="email">Email</label>
+                    <input type="email" name="email" class="formulario__input" placeholder="fulano@gmail.com">
+                    <hr class="hr-form">
+
+                    <label for="telefone">Telefone</label>
+                    <input type="text" name="telefone" class="formulario__input" placeholder="11 87589-8764">
+                    <hr class="hr-form">
+
+                    <label for="mensagem">Mensagem</label>
+                    <textarea name="mensagem" class="formulario__input" placeholder="oi!"></textarea>
+                    <hr class="hr-form">
+
+                    <input type="submit" value="Enviar" class="btn">
+                </form>
+            </section>
+        </article>
+
+        <footer class="footer">
+            <a href="#" class="telefone">Telefone: (11) 1234-5678</a>
+            <div class="social-media">
+                <img src="img/twitter.png" alt="Twitter">
+                <img src="img/facebook.png" alt="Facebook">
+                <img src="img/youtube.png" alt="Youtube">
+            </div>
+            <p class="copyright">Copyright &copy; Agência Mundo gelado 2018</p>
+        </footer>
+
+    </body>
+</html>

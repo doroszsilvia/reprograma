@@ -7,24 +7,29 @@
         <!-- Importing google fonts -->
         <link href="https://fonts.googleapis.com/css?family=Nunito|Varela+Round" rel="stylesheet">
         <!-- External style sheets -->
-        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <link rel="stylesheet" type="text/css" href="css/style-desktop.css">
+        <link rel="stylesheet" type="text/css" href="css/style-tablet.css">
         <!-- Importing Font-Awesome -->
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
     </head>
     <body>
 
         <nav class="main-nav col-12">
-            <ul class="col-4">
-                <li class="main-nav__link col-3">
-                    <a href="#sobre" class="main-nav__a">Sobre</a>
+            <ul class="main-nav__list col-4">
+                <li class="main-nav__item col-3">
+                    <a href="#sobre" class="main-nav__link">Sobre</a>
                 </li>
 
-                <li class="main-nav__link col-3">
-                    <a href="#destinos" class="main-nav__a">Destinos</a>
+                <li class="main-nav__item col-3">
+                    <a href="#destinos" class="main-nav__link">Destinos</a>
                 </li>
 
-                <li class="main-nav__link col-3">
-                    <a href="#" class="main-nav__a">Contato</a>
+                <li class="main-nav__item col-3">
+                    <a href="#" class="main-nav__link">Contato</a>
+                </li>
+
+                <li class="main-nav__item col-3">
+                    <i class="fas fa-bars main-nav__hamburger"></i>
                 </li>
             </ul>
         </nav>
@@ -53,7 +58,7 @@
 
                 <img src="img/siberia.jpg" alt="Foto da Sibéria" class="siberia__img colored-img">
 
-                <div class="siberia__content">
+                <div class="siberia__content left-align">
                     <h3 class="siberia__title">Sibéria</h3>
                     <p class="siberia__description">O clima varia entre o clima polar e o clima continental. Na Sibéria situa-se o local habitado mais frio do mundo, a aldeia de Oymyakon.</p>
                 </div>
@@ -83,9 +88,8 @@
 
         <article class="florest-background">
             <section class="aonde-estamos">
-                <h2 class="sub-title">
-                    <i class="far fa-paper-plane"></i>
-                    Aonde estamos</h2>
+                <i class="far fa-paper-plane fa-2x"></i>
+                <h2 class="sub-title">Aonde estamos</h2>
 
                     <iframe class="iframe-map" src="https://maps.google.com/maps?width=720&amp;height=600&amp;hl=en&amp;q=Avenida%20Paulista%2C%201374+(Esta%C3%A7%C3%A3o%20Hack)&amp;ie=UTF8&amp;t=&amp;z=18&amp;iwloc=B&amp;output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
                     
@@ -93,7 +97,7 @@
 
             <section class="contato">
                 <h2 class="sub-title">Fale com a gente</h2>
-                <form action="#" method="POST" class="formulario">
+                <form action="#" method="POST" class="formulario left-align">
 
                     <label for="nomeCompleto">Nome completo</label>
                     <input type="text" name="nomeCompleto" class="formulario__input" placeholder="Fulano de Tal">
@@ -111,7 +115,7 @@
                     <textarea name="mensagem" class="formulario__input" placeholder="oi!" maxlength="140"></textarea>
                     <hr class="hr-form">
 
-                    <input type="submit" value="Enviar" class="btn">
+                    <input type="submit" value="Enviar" class="btn btn-submit">
                 </form>
             </section>
         </article>

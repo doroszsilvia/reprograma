@@ -8,32 +8,34 @@
         <link href="https://fonts.googleapis.com/css?family=Nunito|Varela+Round" rel="stylesheet">
         <!-- External style sheets -->
         <link rel="stylesheet" type="text/css" href="css/style.css">
-        <!-- Font-Awesome -->
+        <!-- Importing Font-Awesome -->
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
     </head>
     <body>
 
         <nav class="main-nav col-12">
-            <ul class="main-nav__list col-4">
-                <li class="nav-link col-3">
-                    <a href="#sobre" class="nav-a">Sobre</a>
+            <ul class="col-4">
+                <li class="main-nav__link col-3">
+                    <a href="#sobre" class="main-nav__a">Sobre</a>
                 </li>
-                <li class="nav-link col-3">
-                    <a href="#destinos" class="nav-a">Destinos</a>
+
+                <li class="main-nav__link col-3">
+                    <a href="#destinos" class="main-nav__a">Destinos</a>
                 </li>
-                <li class="nav-link col-3">
-                    <a href="#" class="nav-a">Contato</a>
+
+                <li class="main-nav__link col-3">
+                    <a href="#" class="main-nav__a">Contato</a>
                 </li>
             </ul>
         </nav>
 
-        <header class="main-header">
+        <header class="main-header colored-img">
             <main class="main-header__content">
-                <h1 class="main-header__content__title col-12">Mundo Gelado</h1>
+                <h1 class="main-header__title col-12">Mundo Gelado</h1>
 
-                <p class="main-header__content__description col-12">A agência de viagens que te leva aos lugares mais congelantes do planeta.</p>
+                <p class="main-header__description col-12">A agência de viagens que te leva aos lugares mais congelantes do planeta.</p>
 
-                <a href="#" class="main-header__content_link btn">Quero saber mais</a>
+                <a href="#" class="btn">Quero saber mais</a>
             </main>
         </header>
 
@@ -46,10 +48,10 @@
             Veja abaixo nossos destinos disponíveis, e se tiver alguma dúvida ou sugestão, entre em contato com a gente.</p>
         </article>
 
-        <article class="destino" id="destinos">
+        <article class="destinos" id="destinos">
             <section class="siberia">
 
-                <img src="img/siberia.jpg" alt="Foto da Sibéria" class="siberia__img">
+                <img src="img/siberia.jpg" alt="Foto da Sibéria" class="siberia__img colored-img">
 
                 <div class="siberia__content">
                     <h3 class="siberia__title">Sibéria</h3>
@@ -60,17 +62,17 @@
 
             <section class="outros-destinos">
 
-                <img src="img/groenlandia.jpg" alt="Foto da Groenlândia" class="outros-destinos__img">
+                <img src="img/groenlandia.jpg" alt="Foto da Groenlândia" class="outros-destinos__img colored-img">
 
-                <div class="outros-destinos__content left-align">
+                <div class="outros-destinos__content col-6 left-align">
                     <h3 class="outros-destinos__title">Groenlândia</h3>
                     <p class="groenlandia__description">A Groenlândia é a maior ilha do mundo e tem mais de 44 000 km de linha de costa. A população é escassa, confinada a pequenos povoados na costa. A ilha tem a segunda maior reserva de gelo do mundo, apenas ultrapassada pela Antártida.</p>
                     <hr class="hr-destino">
                 </div>
 
-                <img src="img/antartida.jpg" alt="Foto da Antártida" class="outros-destinos__img antartida__img">
+                <img src="img/antartida.jpg" alt="Foto da Antártida" class="outros-destinos__img antartida__img colored-img">
 
-                <div class="outros-destinos__content right-align">
+                <div class="outros-destinos__content col-6 right-align">
                     <h3 class="outros-destinos__title">Antártida</h3>
                     <p class="antartida__description">É o continente mais frio, mais seco, com a maior média de altitude e de maior índice de ventos fortes do planeta.[1] A temperatura mais baixa da Terra (-89,2 °C) foi registrada na Antártica, sendo a temperatura média na costa, durante o verão, de -10 °C; no interior do continente, é de -40 °C</p>
                     <hr class="hr-destino">
@@ -82,13 +84,16 @@
         <article class="florest-background">
             <section class="aonde-estamos">
                 <h2 class="sub-title">
-                    <i class="far far-paper-plane fa-2x"></i>
+                    <i class="far fa-paper-plane"></i>
                     Aonde estamos</h2>
+
                     <iframe class="iframe-map" src="https://maps.google.com/maps?width=720&amp;height=600&amp;hl=en&amp;q=Avenida%20Paulista%2C%201374+(Esta%C3%A7%C3%A3o%20Hack)&amp;ie=UTF8&amp;t=&amp;z=18&amp;iwloc=B&amp;output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+                    
             </section>
+
             <section class="contato">
                 <h2 class="sub-title">Fale com a gente</h2>
-                <form action="" method="POST" class="formulario">
+                <form action="#" method="POST" class="formulario">
 
                     <label for="nomeCompleto">Nome completo</label>
                     <input type="text" name="nomeCompleto" class="formulario__input" placeholder="Fulano de Tal">
@@ -103,7 +108,7 @@
                     <hr class="hr-form">
 
                     <label for="mensagem">Mensagem</label>
-                    <textarea name="mensagem" class="formulario__input" placeholder="oi!"></textarea>
+                    <textarea name="mensagem" class="formulario__input" placeholder="oi!" maxlength="140"></textarea>
                     <hr class="hr-form">
 
                     <input type="submit" value="Enviar" class="btn">
@@ -112,13 +117,12 @@
         </article>
 
         <footer class="footer">
-            <a href="#" class="telefone">Telefone: (11) 1234-5678</a>
-            <div class="social-media">
-                <img src="img/twitter.png" alt="Twitter">
-                <img src="img/facebook.png" alt="Facebook">
-                <img src="img/youtube.png" alt="Youtube">
+            <a href="#" class="footer__telefone">Telefone: (11) 1234-5678</a>
+            <div class="social-media col-12">
+                <a href="#" class="social-media__link"><i class="fab fa-twitter"></i></a>
+                <a href="#" class="social-media__link"><i class="fab fa-facebook-f"></i></a><a href="#" class="social-media__link"><i class="fab fa-youtube"></i></a>
             </div>
-            <p class="copyright">Copyright &copy; Agência Mundo gelado 2018</p>
+            <p class="footer__copyright">Copyright &copy; Agência Mundo gelado 2018</p>
         </footer>
 
     </body>

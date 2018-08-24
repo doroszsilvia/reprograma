@@ -363,7 +363,28 @@ a {
         }
     }
 
+/* -------------GROENLANDIA-------------- */
+.groenlandia__content {
+    text-align: left;
+}
+
+    @media (max-width: 740px) {
+        .groenlandia__content {
+            text-align: center;
+        }
+    }
+
 /* -------------ANTARTIDA-------------- */
+.antartida__content {
+    text-align: right;
+}
+
+    @media (max-width: 740px) {
+        .antartida__content {
+            text-align: center;
+        }
+    }
+
 .antartida__img {
     order: 4;
 }

@@ -401,11 +401,11 @@ a {
     padding-bottom: 50px;
 }
 
-.aonde-estamos i {
+.aonde-estamos .paper-plane {
     color: white;
 }
 
-.aonde-estamos h2{
+.aonde-estamos .subtitle{
     padding-bottom: 20px;
 }
 
@@ -444,6 +444,7 @@ a {
     width: 950px;
     display: flex;
     flex-flow: row wrap;
+    text-align: left;
 }
 
     @media (max-width: 992px) {
@@ -464,7 +465,7 @@ a {
         }
     }
 
-.formulario label {
+.formulario__label {
     width: 100%;
     color: white;
     margin: 10px 0;

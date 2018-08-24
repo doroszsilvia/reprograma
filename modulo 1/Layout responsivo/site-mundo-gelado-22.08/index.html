@@ -6,29 +6,28 @@
         <meta name="viewport" content="width=device-width, inital-scale=1">
         <!-- Importing google fonts -->
         <link href="https://fonts.googleapis.com/css?family=Nunito|Varela+Round" rel="stylesheet">
-        <!-- External style sheets -->
-        <link rel="stylesheet" type="text/css" href="css/style-desktop.css">
-        <link rel="stylesheet" type="text/css" href="css/style-tablet.css">
+        <!-- External style sheet-->
+        <link rel="stylesheet" type="text/css" href="css/style.css">
         <!-- Importing Font-Awesome -->
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
     </head>
     <body>
 
-        <nav class="main-nav col-12">
-            <ul class="main-nav__list col-4">
-                <li class="main-nav__item col-3">
+        <nav class="main-nav">
+            <ul class="main-nav__list">
+                <li class="main-nav__item">
                     <a href="#sobre" class="main-nav__link">Sobre</a>
                 </li>
 
-                <li class="main-nav__item col-3">
+                <li class="main-nav__item">
                     <a href="#destinos" class="main-nav__link">Destinos</a>
                 </li>
 
-                <li class="main-nav__item col-3">
-                    <a href="#" class="main-nav__link">Contato</a>
+                <li class="main-nav__item">
+                    <a href="#contato" class="main-nav__link">Contato</a>
                 </li>
 
-                <li class="main-nav__item col-3">
+                <li class="main-nav__item">
                     <i class="fas fa-bars main-nav__hamburger"></i>
                 </li>
             </ul>
@@ -36,9 +35,9 @@
 
         <header class="main-header colored-img">
             <main class="main-header__content">
-                <h1 class="main-header__title col-12">Mundo Gelado</h1>
+                <h1 class="main-header__title">Mundo Gelado</h1>
 
-                <p class="main-header__description col-12">A agência de viagens que te leva aos lugares mais congelantes do planeta.</p>
+                <p class="main-header__description">A agência de viagens que te leva aos lugares mais congelantes do planeta.</p>
 
                 <a href="#" class="btn">Quero saber mais</a>
             </main>
@@ -69,17 +68,17 @@
 
                 <img src="img/groenlandia.jpg" alt="Foto da Groenlândia" class="outros-destinos__img colored-img">
 
-                <div class="outros-destinos__content col-6 left-align">
+                <div class="outros-destinos__content groenlandia__content">
                     <h3 class="outros-destinos__title">Groenlândia</h3>
-                    <p class="groenlandia__description">A Groenlândia é a maior ilha do mundo e tem mais de 44 000 km de linha de costa. A população é escassa, confinada a pequenos povoados na costa. A ilha tem a segunda maior reserva de gelo do mundo, apenas ultrapassada pela Antártida.</p>
+                    <p>A Groenlândia é a maior ilha do mundo e tem mais de 44 000 km de linha de costa. A população é escassa, confinada a pequenos povoados na costa. A ilha tem a segunda maior reserva de gelo do mundo, apenas ultrapassada pela Antártida.</p>
                     <hr class="hr-destino">
                 </div>
 
                 <img src="img/antartida.jpg" alt="Foto da Antártida" class="outros-destinos__img antartida__img colored-img">
 
-                <div class="outros-destinos__content col-6 right-align">
+                <div class="outros-destinos__content right-align antartida__content">
                     <h3 class="outros-destinos__title">Antártida</h3>
-                    <p class="antartida__description">É o continente mais frio, mais seco, com a maior média de altitude e de maior índice de ventos fortes do planeta.[1] A temperatura mais baixa da Terra (-89,2 °C) foi registrada na Antártica, sendo a temperatura média na costa, durante o verão, de -10 °C; no interior do continente, é de -40 °C</p>
+                    <p>É o continente mais frio, mais seco, com a maior média de altitude e de maior índice de ventos fortes do planeta.[1] A temperatura mais baixa da Terra (-89,2 °C) foi registrada na Antártica, sendo a temperatura média na costa, durante o verão, de -10 °C; no interior do continente, é de -40 °C</p>
                     <hr class="hr-destino">
                 </div>
                 
@@ -95,7 +94,7 @@
                     
             </section>
 
-            <section class="contato">
+            <section class="contato" id="contato">
                 <h2 class="sub-title">Fale com a gente</h2>
                 <form action="#" method="POST" class="formulario left-align">
 
@@ -122,7 +121,7 @@
 
         <footer class="footer">
             <a href="#" class="footer__telefone">Telefone: (11) 1234-5678</a>
-            <div class="social-media col-12">
+            <div class="social-media">
                 <a href="#" class="social-media__link"><i class="fab fa-twitter"></i></a>
                 <a href="#" class="social-media__link"><i class="fab fa-facebook-f"></i></a><a href="#" class="social-media__link"><i class="fab fa-youtube"></i></a>
             </div>

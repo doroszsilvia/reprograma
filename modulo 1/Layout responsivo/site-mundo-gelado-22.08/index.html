@@ -1,44 +1,51 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt-br">
     <head>
         <title>Agência de viagens Mundo Gelado</title>
         <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, inital-scale=1">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <!-- Importing google fonts -->
         <link href="https://fonts.googleapis.com/css?family=Nunito|Varela+Round" rel="stylesheet">
-        <!-- External style sheets -->
+        <!-- External style sheet-->
         <link rel="stylesheet" type="text/css" href="css/style.css">
         <!-- Importing Font-Awesome -->
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
     </head>
     <body>
 
-        <nav class="main-nav col-12">
-            <ul class="col-4">
-                <li class="main-nav__link col-3">
-                    <a href="#sobre" class="main-nav__a">Sobre</a>
+        <!-- MAIN NAV -->
+        <nav class="main-nav">
+            <ul class="main-nav__list">
+                <li class="main-nav__item">
+                    <a href="#sobre" class="main-nav__link">Sobre</a>
                 </li>
 
-                <li class="main-nav__link col-3">
-                    <a href="#destinos" class="main-nav__a">Destinos</a>
+                <li class="main-nav__item">
+                    <a href="#destinos" class="main-nav__link">Destinos</a>
                 </li>
 
-                <li class="main-nav__link col-3">
-                    <a href="#" class="main-nav__a">Contato</a>
+                <li class="main-nav__item">
+                    <a href="#contato" class="main-nav__link">Contato</a>
+                </li>
+
+                <li class="main-nav__item">
+                    <i class="fas fa-bars main-nav__hamburger"></i>
                 </li>
             </ul>
         </nav>
 
+        <!-- MAIN HEADER -->
         <header class="main-header colored-img">
             <main class="main-header__content">
-                <h1 class="main-header__title col-12">Mundo Gelado</h1>
+                <h1 class="main-header__title">Mundo Gelado</h1>
 
-                <p class="main-header__description col-12">A agência de viagens que te leva aos lugares mais congelantes do planeta.</p>
+                <p class="main-header__description">A agência de viagens que te leva aos lugares mais congelantes do planeta.</p>
 
                 <a href="#" class="btn">Quero saber mais</a>
             </main>
         </header>
 
+        <!-- ARTICLE ABOUT -->
         <article class="sobre" id="sobre">
             <h2 class="sub-title">A agência Mundo gelado</h2>
             <p class="sobre__description">Nosso diferencial é te levar para conhecer as mais lindas e geladas paisagens no nosso planeta, com conforto e segurança. 
@@ -48,7 +55,10 @@
             Veja abaixo nossos destinos disponíveis, e se tiver alguma dúvida ou sugestão, entre em contato com a gente.</p>
         </article>
 
+        <!-- ARTICLE DESTINOS-->
         <article class="destinos" id="destinos">
+
+            <!-- SIBERIA -->
             <section class="siberia">
 
                 <img src="img/siberia.jpg" alt="Foto da Sibéria" class="siberia__img colored-img">
@@ -60,67 +70,69 @@
 
             </section>
 
+            <!-- GROENLANDIA E ANTARTIDA-->
             <section class="outros-destinos">
 
                 <img src="img/groenlandia.jpg" alt="Foto da Groenlândia" class="outros-destinos__img colored-img">
 
-                <div class="outros-destinos__content col-6 left-align">
+                <div class="outros-destinos__content groenlandia__content">
                     <h3 class="outros-destinos__title">Groenlândia</h3>
-                    <p class="groenlandia__description">A Groenlândia é a maior ilha do mundo e tem mais de 44 000 km de linha de costa. A população é escassa, confinada a pequenos povoados na costa. A ilha tem a segunda maior reserva de gelo do mundo, apenas ultrapassada pela Antártida.</p>
+                    <p>A Groenlândia é a maior ilha do mundo e tem mais de 44 000 km de linha de costa. A população é escassa, confinada a pequenos povoados na costa. A ilha tem a segunda maior reserva de gelo do mundo, apenas ultrapassada pela Antártida.</p>
                     <hr class="hr-destino">
                 </div>
 
                 <img src="img/antartida.jpg" alt="Foto da Antártida" class="outros-destinos__img antartida__img colored-img">
 
-                <div class="outros-destinos__content col-6 right-align">
+                <div class="outros-destinos__content antartida__content">
                     <h3 class="outros-destinos__title">Antártida</h3>
-                    <p class="antartida__description">É o continente mais frio, mais seco, com a maior média de altitude e de maior índice de ventos fortes do planeta.[1] A temperatura mais baixa da Terra (-89,2 °C) foi registrada na Antártica, sendo a temperatura média na costa, durante o verão, de -10 °C; no interior do continente, é de -40 °C</p>
+                    <p>É o continente mais frio, mais seco, com a maior média de altitude e de maior índice de ventos fortes do planeta.[1] A temperatura mais baixa da Terra (-89,2 °C) foi registrada na Antártica, sendo a temperatura média na costa, durante o verão, de -10 °C; no interior do continente, é de -40 °C</p>
                     <hr class="hr-destino">
                 </div>
                 
             </section>
         </article>
 
+        <!-- ARTICLE LOCALIZAÇÃO/FORM -->
         <article class="florest-background">
-            <section class="aonde-estamos">
-                <h2 class="sub-title">
-                    <i class="far fa-paper-plane"></i>
-                    Aonde estamos</h2>
 
-                    <iframe class="iframe-map" src="https://maps.google.com/maps?width=720&amp;height=600&amp;hl=en&amp;q=Avenida%20Paulista%2C%201374+(Esta%C3%A7%C3%A3o%20Hack)&amp;ie=UTF8&amp;t=&amp;z=18&amp;iwloc=B&amp;output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
-                    
+            <section class="aonde-estamos">
+                <i class="far fa-paper-plane fa-2x paper-plane"></i>
+                <h2 class="sub-title">Aonde estamos</h2>
+                <iframe class="iframe-map" src="https://maps.google.com/maps?width=720&amp;height=600&amp;hl=en&amp;q=Avenida%20Paulista%2C%201374+(Esta%C3%A7%C3%A3o%20Hack)&amp;ie=UTF8&amp;t=&amp;z=18&amp;iwloc=B&amp;output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe> 
             </section>
 
-            <section class="contato">
+            <section class="contato" id="contato">
                 <h2 class="sub-title">Fale com a gente</h2>
                 <form action="#" method="POST" class="formulario">
 
-                    <label for="nomeCompleto">Nome completo</label>
+                    <label for="nomeCompleto" class="formulario__label">Nome completo</label>
                     <input type="text" name="nomeCompleto" class="formulario__input" placeholder="Fulano de Tal">
                     <hr class="hr-form">
 
-                    <label for="email">Email</label>
+                    <label for="email" class="formulario__label">Email</label>
                     <input type="email" name="email" class="formulario__input" placeholder="fulano@gmail.com">
                     <hr class="hr-form">
 
-                    <label for="telefone">Telefone</label>
+                    <label for="telefone" class="formulario__label">Telefone</label>
                     <input type="text" name="telefone" class="formulario__input" placeholder="11 87589-8764">
                     <hr class="hr-form">
 
-                    <label for="mensagem">Mensagem</label>
+                    <label for="mensagem" class="formulario__label">Mensagem</label>
                     <textarea name="mensagem" class="formulario__input" placeholder="oi!" maxlength="140"></textarea>
                     <hr class="hr-form">
 
-                    <input type="submit" value="Enviar" class="btn">
+                    <input type="submit" value="Enviar" class="btn btn-submit">
                 </form>
             </section>
         </article>
 
+        <!-- FOOTER -->
         <footer class="footer">
             <a href="#" class="footer__telefone">Telefone: (11) 1234-5678</a>
-            <div class="social-media col-12">
+            <div class="social-media">
                 <a href="#" class="social-media__link"><i class="fab fa-twitter"></i></a>
-                <a href="#" class="social-media__link"><i class="fab fa-facebook-f"></i></a><a href="#" class="social-media__link"><i class="fab fa-youtube"></i></a>
+                <a href="#" class="social-media__link"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" class="social-media__link"><i class="fab fa-youtube"></i></a>
             </div>
             <p class="footer__copyright">Copyright &copy; Agência Mundo gelado 2018</p>
         </footer>

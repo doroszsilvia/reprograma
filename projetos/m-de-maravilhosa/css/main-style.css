@@ -1,0 +1,225 @@
+/* --------------GERAL---------------- */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: 'Montserrat', Arial;
+    font-size: 10px;
+}
+
+a {
+    text-decoration: none;
+    display: inline-block;
+    color: white;
+}
+
+.btn {
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 1.1rem;
+    font-weight: bolder;
+    background-color: #C083B9;
+    border-radius: 10px;
+    padding: 10px 20px;
+    width: 220px;
+}
+
+.btn:hover {
+    background-color: #B85CAD;
+    transition: 1s;
+}
+
+@media (min-width: 768px) {
+    .btn-big {
+        width: 270px;
+        padding: 15px 20px;
+        font-size: 1.4rem;
+    }
+}
+
+/* ------------MAIN NAV--------- */
+.main-nav {
+    background-color: #674582;
+    height: 90px;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.main-nav__logo {
+    width: 200px;
+}
+
+    @media (min-width: 768px) {
+        .main-nav__logo-div {
+            width: 30%;
+            text-align: right;
+        }
+    }
+
+.main-nav__hamburger {
+    width: 30px;
+    margin: 0 20px;
+}
+
+    @media (min-width: 768px) {
+        .main-nav__hamburger {
+            display: none;
+        }
+    }
+
+.main-nav__list, .social-medias {
+    display: none;
+}
+
+    @media (min-width: 768px) {
+        .main-nav__list, .social-medias {
+            display: block;
+        }
+
+        .main-nav__list {
+            width: 70%;
+            padding-left: 5%;
+            text-align: center;
+        }
+        
+        .main-nav__item {
+            list-style-type: none;
+            display: inline-block;
+            margin: 0px 10px;
+            vertical-align: middle;
+        }
+        
+        .main-nav__link {
+            font-size: 0.8rem;
+            text-transform: uppercase;
+        }
+
+        .social-media__link {
+            margin: 0 5px;
+        }
+    }
+
+/* -------------MAIN HEADER--------- */
+.main-header {
+    height: 100vh;
+    color: white;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-end;
+}
+
+.main-header__title {
+    margin: 0;
+    font-size: 1.4rem;
+    text-transform: uppercase;
+}
+
+    @media (min-width: 768px) {
+        .main-header__title {
+            font-size: 1.8rem;
+        }
+    }
+
+/* --------MAIN ARTICLE-------- */
+.article__title {
+    font-size: 1.2rem;
+    font-family: 'Roboto Slab', Arial;
+    color: #63458A;
+    text-align: center;
+    width: 100%;
+}
+
+    @media (min-width: 768px) {
+        .article__title {
+            font-size: 1.2rem;
+        }
+    }
+
+
+/* ------------FOOTER----------- */
+.main-footer {
+    background-color: #323534;
+    color: white;
+    display: flex;
+    flex-flow: column nowrap;
+    text-align: center;
+}
+
+    @media (min-width: 768px) {
+        .main-footer {
+            flex-flow: row wrap;
+            align-items: center;
+            justify-content: center;
+            height: 150px;
+        }
+    }
+
+.footer-nav {
+    display: inline-block;
+    margin: 10px 0;
+    font-size: 0.9rem;
+}
+
+    @media (min-width: 768px) {
+        .footer-nav {
+            padding: 25px 0;
+        }
+    }
+
+.footer-nav__list {
+    padding: 0;
+}
+
+.footer-nav__item {
+    list-style-type: none;
+    margin-bottom: 8px;
+}
+
+    @media (min-width: 768px) {
+        .footer-nav__item {
+            font-size: 0.8rem;
+        }
+    }
+
+.main-footer__logo {
+    width: 200px;
+    margin: 10px auto;
+}
+
+    @media (min-width: 768px) {
+        .main-footer__logo {
+            margin: 0 90px;
+        }
+    }
+
+    @media (min-width: 1024px) {
+        .main-footer__logo {
+            margin: 0 60px;
+        }
+    }
+
+.main-footer__fb-icon {
+    height: 25px;
+}
+
+.main-footer__made-by {
+    background-color: #292A2A;
+    font-size: 0.7rem;
+    font-weight: lighter;
+    margin: 10px 0 0 0;   
+}
+
+    @media (min-width: 768px) {
+        .main-footer__made-by {
+            width: 100%;
+            margin: 0;
+            padding: 10px 0;
+        }
+    }    

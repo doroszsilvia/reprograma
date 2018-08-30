@@ -1,0 +1,197 @@
+/* -------------MAIN HEADER------------*/
+.main-header_profile {
+    background: url(../img/miep-gies.jpeg);
+    background-position: center;
+    background-size: cover;
+    padding: 30px 20%;
+    text-align: center;
+}
+
+.main-header__title_profile {
+    text-shadow: 0px 0px 10px black;
+}
+
+/* -----------ABOUT PERSON-----------*/
+.about-person {
+    display: flex;
+    flex-flow: column nowrap;
+    text-align: center; 
+    padding: 20px 15%;
+    color: #555;
+}
+
+    @media (min-width: 768px) {
+        .about-person {
+            flex-flow: row wrap;
+            align-items: center;
+        }
+    }
+
+    @media (min-width: 1024px) {
+        .about-person {
+            padding: 20px 20%;
+        }
+    }
+
+.about-person__main-img {
+    width: 100%;
+    margin: 0 auto;
+}
+
+    @media (min-width: 768px) {
+        .about-person__main-img {
+            width: 200px;
+            margin: 20px 0;
+        }
+    }
+
+    @media (min-width: 1024px) {
+        .about-person__main-img {
+            width: 190px;
+        }
+    }
+
+.about-person__description {
+    font-size: 1.3rem;
+    text-align: left;
+}
+
+    @media (min-width: 768px) {
+        .about-person__description {
+            font-size: 1rem;
+        }
+
+        .about-person__description_half {
+            width: 58%;
+            margin-left: 15px;
+            vertical-align: middle;
+        }
+    }
+
+    @media (min-width: 1024px) {
+        .about-person__description_half {
+            width: 65%;
+        }
+    }
+
+.about-person__quote {
+    width: 100%;
+    font-size: 1.2rem;
+    font-weight: bolder;
+    border: 1px solid gray;
+    color: #63458A;
+    padding: 20px 20px;
+    margin: 0 auto;
+}
+
+    @media (min-width: 768px) {
+        .about-person__quote {
+            margin: 25px 0;
+        }
+    }
+
+.article__title_history {
+    text-align: left;
+}    
+
+.about-person__second-img {
+    width: 100%;
+}
+
+/* -------------ABOUT AUTHOR----------*/
+.about-author {
+    background-color: #EEB4E4;
+    padding: 5px 0;
+}
+
+    @media (min-width: 768px) {
+        .about-author {
+            padding: 0 15% 0 20%;
+        }
+    }
+
+.about-author__div {
+    margin: 0 auto;
+    padding: 0 15%;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+}
+
+    @media (min-width: 768px) {
+        .about-author__div {
+            padding: 0 0 0 15%;
+            flex-flow: row nowrap;
+            justify-content: center;
+        }
+    }
+
+    @media (min-width: 1024px) {
+        .about-author__div {
+            padding: 0 10% 0 20%;
+        }
+    }
+
+.about-author__img {
+    width: 60%;
+    max-width: 200px;
+}
+
+    @media (min-width: 768px) {
+        .about-author__img {
+            width: 150px;
+        }
+    }
+
+
+.about-author__content {
+    width: 60%;
+    max-width: 200px;
+    text-align: left;
+}
+
+    @media (min-width: 768px) {
+        .about-author__content {
+            max-width: none;
+            padding-left: 30px;
+            width: 100%;
+        }
+    }
+
+.about-author__description {
+    margin: 3px 0;
+    color: #63458A;
+    font-size: .8rem;
+    font-weight: bolder;
+}
+
+    @media (min-width: 425px) {
+        .about-author__description {
+            font-size: .9rem;
+        }
+    }
+
+    @media (min-width: 768px) {
+        .about-author__description {
+            font-size: 1.1rem;
+        }
+    }
+
+.about-author__github {
+    color: #63458A;
+}
+
+.about-author__github:hover {
+    color: #3A1D5F;
+    transition: 1s;
+}
+
+/* --------VER TODAS ELAS BTN-------*/
+.btn-div {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.italic-text {
+    font-style: italic; 
+}

@@ -5,11 +5,30 @@
 
 body {
     margin: 0;
+    font-family: 'Asap', Arial;
 }
 
 a {
     text-decoration: none;
     display: inline-block;
+}
+
+.btn {
+    
+    text-transform: uppercase;
+    text-align: center;
+    font-family: "Asap", Arial;
+    font-size: 1rem;
+    font-weight: bolder;
+    border-radius: 5px;
+    
+    padding: 10px 30px;
+    margin: 10px 0;
+    width: fit-content;
+}
+
+.img {
+    width: 90px;
 }
 
 /* -------------NAV------------ */
@@ -33,7 +52,7 @@ a {
     display: none;
 }
 
-.menu-icon {
+.topbar__menu-icon {
     color: white;
     text-shadow: 0 0 5px black;
 }
@@ -44,7 +63,7 @@ a {
     background-size: cover;
     background-position: center;
     height: 85vh;
-    padding: 0 calc(100vw - 95%);
+    padding: 0 50px;
 
     display: flex;
     flex-flow: column nowrap;
@@ -54,9 +73,9 @@ a {
 }
 
 .main-header__title {
-    margin-top: 0;
-    font-size: 2rem;
-    font-family: 'Asap', Arial;
+    margin-top: 25px;
+    font-size: 1.7rem;
+    font-family: 'Sawarabi Mincho', Arial;
     font-weight: 400;
 }
 
@@ -64,16 +83,189 @@ a {
     display: none;
 }
 
-.main-header__anchor {
+.btn_yellow {
     background-color: #FFDC6F;
     color: #927441;
-    text-transform: uppercase;
+}
+
+/* ---------ARTICLE ABOUT----------*/
+.about {
+   padding: 20px 50px;
+}
+
+
+
+.about__paragraph {
+    color: gray;
+}
+
+.article__title {
     text-align: center;
-    font-family: "Asap", Arial;
-    font-size: 1rem;
+}
+
+/* ------------ARTICLE DEF---------- */
+.about__def {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+}
+
+.def__title {
+    margin-bottom: 0px;
+}
+
+/* -------ARTICLE HOW WORKS------ */
+.how-works__title {
+    margin-top: 0px;
+}
+
+.how-works__div {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    text-align: center;
+}
+
+.bold-p {
+    display: block;
+    font-size: 1.2rem;
     font-weight: bolder;
-    border-radius: 5px;
+}
+
+/* -------OUR SERVICES------- */
+.our-services {
+    background: url(../img/bg-servicos.png);
+
+    padding: 20px;
+
+    display: flex;
+    flex-flow: column wrap;
+}
+
+.our-services__consultoria, .our-services__roteiro {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+
+    margin: 10px 30px;
+    background-color: #34C0D5;
+    color: white;
+    border-radius: 10px;
+    box-shadow: 0px 0px 7px rgba(0, 0, 0, .7);
+}
+
+.our-services__paragraph {
+    margin: 15px;
+}
+
+.our-services__btn {
+    margin: 10px 0;
+}
+
+/* ----------OUR DATA---------- */
+.our-data {
+    background: url(../img/bg-numeros.png) no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    padding: 0 50px;
+
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;    
+    text-align: center;
+}
+
+.our-data__div {
+    margin: 10px 0;
+    width: 100%;
+}
+
+.our-data__paragraph {
+    color: white;
+}
+
+.highlight-p {
+    display: block;
+    color: #FFDC6F;
+    font-weight: bolder;
+    font-size: 1.8rem;
     
+}
+
+/* -----------CONTACT--------- */
+.contact {
+    margin: 20px;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+}
+
+.contact__form {
     padding: 10px 30px;
-    width: fit-content;
+    width: 100%;
+}
+
+.form__label {
+    display: block;
+    margin-top: 10px;
+}
+
+.form__input {
+    width: 100%;
+    height: 30px;
+}
+
+.form__textarea {
+    width: 100%;
+    height: 70px;
+    resize: none;
+}
+
+.form__submit {
+    display: block;
+}
+
+/* ----------NEWSLETTER--------- */
+.newsletter {
+   margin: 20px; 
+
+   display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+}
+
+.newsletter__form {
+    padding: 10px 30px;
+    width: 100%;
+}
+
+/* FOOTER */
+.footer {
+    background-color: darkblue;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+}
+
+.footer-nav__item {
+    list-style-type: none;
+}
+
+.sharing-experiences {
+    margin: 10px 0;
+
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+
+    order: 3;
+}
+
+.footer__paragraph {
+    margin: 0;
+}
+
+.social-media {
+    order: 2;
 }

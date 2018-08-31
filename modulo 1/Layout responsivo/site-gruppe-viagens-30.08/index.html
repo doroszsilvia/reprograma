@@ -10,13 +10,14 @@
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
         <!-- Google Font -->
         <link href="https://fonts.googleapis.com/css?family=Asap:400,400i,700|Flamenco" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Sawarabi+Mincho" rel="stylesheet">
     </head>
     <body>
 
         <nav class="topbar">
             <a href="#" class="topbar__anchor"><img src="img/logo.png" alt="Logo do site" class="topbar__logo"></a>
 
-            <a href="#" class="topbar__anchor"><i class="fas fa-ellipsis-h fa-3x menu-icon"></i></a>
+            <a href="#" class="topbar__anchor"><i class="fas fa-ellipsis-h fa-3x topbar__menu-icon"></i></a>
 
             <ul class="topbar__list">
                 <li class="topbar__item"><a href="#" class="topbar__link">Sobre</a></li>
@@ -30,122 +31,148 @@
         <header class="main-header">
             <h1 class="main-header__title">A viagem dos seus sonhos começa aqui!</h1>
             <p class="main-header__paragraph">Escolhemos os melhores destinos para você viajar! Já sabe para onde vai? Nós também criamos roteiros personalizados, selecionando os pontos turísticos e restaurantes mais apropriados para você.</p>
-            <a href="#" class="main-header__anchor">Experimentar agora</a>
+            <a href="#" class="btn btn_yellow">Experimentar agora</a>
         </header>
 
         <main>
-            <article>
-                <section>
-                    <img src="" alt="">
-                    <h2>O que é o Gruppe?</h2>
-                    <p>Gruppe é um serviço de consultoria para todos os tipos de viajantes. Somos especializados em entender nossos clientes e montar o roteiro levando em consideração o seu perfil, quem vai com você, seu orçamento e outras informações relevantes!</p>
+            <article class="about">
+
+                <section class="about__def">
+                    <img src="img/sobre-01.png" alt="O que é o Gruppe?" class="img">
+                    <h2 class="article__title def__title">O que é o Gruppe?</h2>
+                    <p class="about__paragraph def__paragraph">Gruppe é um serviço de consultoria para todos os tipos de viajantes. Somos especializados em entender nossos clientes e montar o roteiro levando em consideração o seu perfil, quem vai com você, seu orçamento e outras informações relevantes!</p>
                 </section>
 
-                <section>
-                    <h2>Entendi! E como funciona?</h2>
+                <section class="about__how-works">
+                    <h2 class="article__title how-works__title">Entendi! E como funciona?</h2>
 
-                    <div>
-                        <img src="" alt="">
-                        <p><span>Você nos diz quem é!</span>
-                        Se você gosta de aventura, se está viajando à trabalho, quanto tem para gastar etc.
+                    <div class="how-works__div how-works__div_step">
+                        <img src="img/passo01.png" alt="Passo 1" class="img">
+                        <p class="about__paragraph">
+                            <span class="bold-p">Você nos diz quem é!</span>
+                            Se você gosta de aventura, se está viajando à trabalho, quanto tem para gastar etc.</p>
                     </div>
 
-                    <div><img src="" alt=""></div>
+                    <div class="how-works__div how-works__div_arrow"><img src="" alt=""></div>
 
-                    <div>
-                        <img src="" alt="">
-                        <p><span>Montamos o melhor roteiro</span>
-                        que se encaixa com suas especificações.</p>
+                    <div class="how-works__div how-works__div_step">
+                        <img src="img/passo-02.png" alt="Passo 2" class="img">
+                        <p class="about__paragraph">
+                            <span class="bold-p">Montamos o melhor roteiro</span>
+                            que se encaixa com suas especificações.</p>
                     </div>
 
-                    <div><img src="" alt=""></div>
+                    <div class="how-works__div how-works__div_arrow"><img src="" alt=""></div>
 
-                    <div>
-                        <img src="" alt="">
-                        <p><span>Aproveite sua viagem</span>
-                        ao máximo, sem perder horas montando um roteiro!</p>
+                    <div class="how-works__div how-works__div_step">
+                        <img src="img/passo-03.png" alt="Passo 3" class="img">
+                        <p class="about__paragraph">
+                            <span class="bold-p">Aproveite sua viagem</span>
+                            ao máximo, sem perder horas montando um roteiro!</p>
                     </div>
                 </section>
 
             </article>
 
-            <article>
-                <h2>Nossos serviços</h2>
+            <article class="our-services">
+                <h2 class="article__title">Nossos serviços</h2>
 
-                <section>
+                <section class="our-services__consultoria">
                     <h3>Consultoria</h3>
-                    <img src="" alt="">
-                    <p>Não sabe para onde viajar? A consultoria visa selecionar os melhores destinos do Brasil e do mundo para a sua próxima viagem</p>
-                    <a href="#">Saber mais</a>
+                    <img src="img/servicos-consultoria.png" alt="Consultoria" class="img">
+                    <p class="our-services__paragraph">Não sabe para onde viajar? A consultoria visa selecionar os melhores destinos do Brasil e do mundo para a sua próxima viagem</p>
+                    <a href="#" class="btn btn_yellow">Saber mais</a>
                 </section>
 
-                <section>
+                <section class="our-services__roteiro">
                     <h3>Roteiro</h3>
-                    <img src="" alt="">
-                    <p>Sua viagem está chegando, mas não sabe o que visitar e onde comer? Nós temos uma equipe de consultores apaixonada por viagem. Sabemos como montar o roteiro para cada perfil de viajante.</p>
-                    <a href="#">Saber mais</a>
+                    <img src="img/servicos-roteiros.png" alt="Roteiros" class="img">
+                    <p class="our-services__paragraph">Sua viagem está chegando, mas não sabe o que visitar e onde comer? Nós temos uma equipe de consultores apaixonada por viagem. Sabemos como montar o roteiro para cada perfil de viajante.</p>
+                    <a href="#" class="btn btn_yellow">Saber mais</a>
                 </section>
             </article>
 
-            <article>
+            <article class="our-data">
                 <h2>Você sabia que...</h2>
-                <div>
-                    <p><span>80%</span> É o que você economiza quando planeja uma viagem de antemão.</p>
+
+                <div class="our-data__div">
+                    <p class="our-data__paragraph">
+                        <span class="highlight-p">80%</span> 
+                        É o que você economiza quando planeja uma viagem de antemão.</p>
                 </div>
 
-                <div>
-                    <p><span>50+</span> Localidades diferentes nossos consultores conhecem no mundo inteiro</p>
+                <div class="our-data__div">
+                    <p class="our-data__paragraph">
+                        <span class="highlight-p">50+</span> 
+                        Localidades diferentes nossos consultores conhecem no mundo inteiro</p>
                 </div>
 
-                <div>
-                    <p><span>1000+</span> Brasileiros viajaram no ano de 2016</p>
+                <div class="our-data__div">
+                    <p class="our-data__paragraph">
+                        <span class="highlight-p">1000+</span> 
+                        Brasileiros viajaram no ano de 2016</p>
                 </div>
             </article>
 
-            <article>
-                <h2>Alguma dúvida? Fale com a gente!</h2>
-                <form action="" method="post">
-                    <label for="nome">Nome</label>
-                    <input type="text" name="nome">
-                    <label for="email">E-mail</label>
-                    <input type="email" name="nome">
-                    <label for="assunto">Assunto</label>
-                    <input type="text" name="assunto">
-                    <label for="mensagem">Mensagem</label>
-                    <textarea name="mensagem"></textarea>
-                    <input type="submit" value="Enviar">
+            <article class="contact">
+                <h2 class="article__title">Alguma dúvida? Fale com a gente!</h2>
+                
+                <form action="" method="post" class="contact__form">
+                    <label for="nome" class="form__label">Nome</label>
+                    <input type="text" name="nome" class="form__input">
+
+                    <label for="email" class="form__label">E-mail</label>
+                    <input type="email" name="nome" class="form__input">
+
+                    <label for="assunto" class="form__label">Assunto</label>
+                    <input type="text" name="assunto" class="form__input">
+
+                    <label for="mensagem" class="form__label">Mensagem</label>
+                    <textarea name="mensagem" class="form__textarea"></textarea>
+
+                    <input type="submit" value="Enviar" class="form__submit">
                 </form>
             </article>
 
-            <article>
-                <h2>Fique ligado nas novidades do Gruppe!</h2>
-                <form action="" method="post">
+            <article class="newsletter">
+                <h2 class="article__title">Fique ligado nas novidades do Gruppe!</h2>
+                <form action="" method="post" class="newsletter__form">
                     <label for="newsletter-email"></label>
-                    <input type="email" name="newsletter-email">
-                    <input type="submit" value="Começar agora">
+                    <input type="email" name="newsletter-email" class="form__input">
+                    <input type="submit" value="Começar agora" class="form__submit">
                 </form>
             </article>
 
-            <footer>
-                <nav>
-                    <ul>
-                        <li><a href="#">Sobre</a></li>
-                        <li><a href="#">Como funciona</a></li>
-                        <li><a href="#">Roteiros</a></li>
-                        <li><a href="#">Consultoria</a></li>
-                        <li><a href="#">Contato</a></li>
+            <footer class="footer">
+                <nav class="footer__nav">
+                    <ul class="footer-nav__list">
+                        <li class="footer-nav__item">
+                            <a href="#" class="footer-nav__link">Sobre</a>
+                        </li>
+                        <li class="footer-nav__item">
+                            <a href="#" class="footer-nav__link">Como funciona</a>
+                        </li>
+                        <li class="footer-nav__item">
+                            <a href="#" class="footer-nav__link">Roteiros</a>
+                        </li>
+                        <li class="footer-nav__item">
+                            <a href="#" class="footer-nav__link">Consultoria</a>
+                        </li>
+                        <li class="footer-nav__item">
+                            <a href="#" class="footer-nav__link">Contato</a>
+                        </li>
                     </ul>
                 </nav>
 
-                <div>
-                    <img src="" alt="">
-                    <p>Sharing Experiences</p>
-                    <a href="#">contato@gruppe.com</a>
-                    <p>&copy; Copyright 2017. Gruppe Viagens</p>
+                <div class="sharing-experiences">
+                    <img src="img/logo-footer.png" alt="Logo do rodapé" class="img">
+                    <p class="footer__paragraph">Sharing Experiences</p>
+                    <a href="#" >contato@gruppe.com</a>
+                    <p class="footer__paragraph">&copy; Copyright 2017. Gruppe Viagens</p>
                 </div>
 
-                <div>
-                    <p>Siga-nos nas redes sociais!</p>
+                <div class="social-media">
+                    <p class="footer__paragraph">Siga-nos nas redes sociais!</p>
                     <img src="" alt="">
                     <img src="" alt="">
                 </div>

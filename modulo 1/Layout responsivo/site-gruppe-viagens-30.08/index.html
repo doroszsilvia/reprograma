@@ -10,10 +10,11 @@
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
         <!-- Google Font -->
         <link href="https://fonts.googleapis.com/css?family=Asap:400,400i,700|Flamenco" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css?family=Sawarabi+Mincho" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Sawarabi+Mincho:400" rel="stylesheet">
     </head>
     <body>
 
+        <div class="colored-topbar"></div>
         <nav class="topbar">
             <a href="#" class="topbar__anchor"><img src="img/logo.png" alt="Logo do site" class="topbar__logo"></a>
 
@@ -27,6 +28,7 @@
                 <li class="topbar__item"><a href="#" class="topbar__link">Quero Agora!</a></li>
             </ul>
         </nav>
+        
 
         <header class="main-header">
             <h1 class="main-header__title">A viagem dos seus sonhos começa aqui!</h1>
@@ -93,7 +95,7 @@
             </article>
 
             <article class="our-data">
-                <h2>Você sabia que...</h2>
+                <h2 class="article__title our-data__title">Você sabia que...</h2>
 
                 <div class="our-data__div">
                     <p class="our-data__paragraph">
@@ -119,18 +121,18 @@
                 
                 <form action="" method="post" class="contact__form">
                     <label for="nome" class="form__label">Nome</label>
-                    <input type="text" name="nome" class="form__input">
+                    <input type="text" name="nome" class="form__input form__input_contact" required>
 
                     <label for="email" class="form__label">E-mail</label>
-                    <input type="email" name="nome" class="form__input">
+                    <input type="email" name="nome" class="form__input form__input_contact" required>
 
                     <label for="assunto" class="form__label">Assunto</label>
-                    <input type="text" name="assunto" class="form__input">
+                    <input type="text" name="assunto" class="form__input form__input_contact" required>
 
                     <label for="mensagem" class="form__label">Mensagem</label>
-                    <textarea name="mensagem" class="form__textarea"></textarea>
+                    <textarea name="mensagem" class="form__textarea" required maxlength="100"></textarea>
 
-                    <input type="submit" value="Enviar" class="form__submit">
+                    <input type="submit" value="Enviar" class="btn form__submit">
                 </form>
             </article>
 
@@ -138,8 +140,8 @@
                 <h2 class="article__title">Fique ligado nas novidades do Gruppe!</h2>
                 <form action="" method="post" class="newsletter__form">
                     <label for="newsletter-email"></label>
-                    <input type="email" name="newsletter-email" class="form__input">
-                    <input type="submit" value="Começar agora" class="form__submit">
+                    <input type="email" name="newsletter-email" placeholder="Insira seu e-mail" class="form__input form__input_newsletter required">
+                    <input type="submit" value="Começar agora" class="btn form__submit_newsletter">
                 </form>
             </article>
 
@@ -167,14 +169,14 @@
                 <div class="sharing-experiences">
                     <img src="img/logo-footer.png" alt="Logo do rodapé" class="img">
                     <p class="footer__paragraph">Sharing Experiences</p>
-                    <a href="#" >contato@gruppe.com</a>
-                    <p class="footer__paragraph">&copy; Copyright 2017. Gruppe Viagens</p>
+                    <a href="#" class="footer__email-contact">contato@gruppe.com</a>
+                    <p class="footer__paragraph-copyright">&copy; Copyright 2017. Gruppe Viagens</p>
                 </div>
 
                 <div class="social-media">
-                    <p class="footer__paragraph">Siga-nos nas redes sociais!</p>
-                    <img src="" alt="">
-                    <img src="" alt="">
+                    <h3 class="social-media__title">Siga-nos nas redes sociais!</p>
+                    <i class="fab fa-facebook fa-2x social-media__icon"></i>
+                    <i class="fab fa-youtube-square fa-2x social-media__icon"></i>
                 </div>
             </footer>
         </main>

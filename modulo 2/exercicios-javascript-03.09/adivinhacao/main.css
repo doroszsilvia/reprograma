@@ -1,0 +1,61 @@
+* {
+	box-sizing: border-box;
+	font-family: 'Montserrat', sans-serif;
+	margin: 0;
+	padding: 0;
+}
+
+main {
+	align-items: center;
+	display: flex;
+	height: 100vh;
+	justify-content: center;
+	width: 100%;
+}
+
+.game,
+.result {
+	max-width: 500px;
+	min-width: 320px;
+	width: 50%;
+}
+
+.game input {
+	border-radius: 5px;
+	border: 1px solid #999;
+	color: #999;
+	font-size: 15px;
+	padding: 15px;
+	width: 100%;
+}
+
+.game p {
+	margin-top: 30px;
+	opacity: 0;
+	transition: opacity 300ms;
+}
+
+.result {
+	align-items: center;
+	background-image: url("https://media2.giphy.com/media/d3MK2JGObFW0NPSE/giphy.gif");
+	background-size: cover;
+	display: none;
+	height: 30vh;
+	justify-content: center;
+	max-height: 500px;
+}
+
+.result p {
+	display: inline-block;
+	font-size: 2em;
+	font-weight: 700;
+	padding: 5px;
+}
+
+.result p span {
+	background-color: black;
+	color: white;
+	display: inline-block;
+	margin-bottom: 3px;
+	padding: 0 5px;
+}

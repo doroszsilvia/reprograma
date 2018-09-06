@@ -3,10 +3,14 @@ const { isSorted } = require('./_helpers')
 // Esta funcao recebe uma lista
 // e organiza essa lista usando
 // o "Pancake Sort".
-function pancakeSort(arr) {
+function pancakeSort(arr) { /* [2,5,9,3] */
+
 	for (let i = 0; i < arr.length; i++) {
-		let largest = -Infinity
-		let largest_index
+
+		let largest = -Infinity; /* Pega o menor valor possível */
+		let largest_index;
+
+		/* irá i */
 		for (let j = i; j < arr.length; j++) {
 			if (arr[j] > largest) {
 				largest = arr[j]
@@ -32,5 +36,7 @@ function pancakeSort(arr) {
 
 	return arr
 }
+
+console.log(pancakeSort([2,5,9,3]));
 
 exports = module.exports = pancakeSort

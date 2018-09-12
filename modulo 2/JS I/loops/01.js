@@ -37,8 +37,8 @@ console.log(soma);
 // que significa 10 * 9 * 8 * 7 ... * 1.
 
 let fatorial = 10;
-for (let i = fatorial - 1; i >= 1; i--) {
-    fatorial *= i;
+for (let i = 9; i >= 1; i--) {
+    fatorial = fatorial * i;
 }
 console.log(fatorial);
 
@@ -69,27 +69,19 @@ console.log(contador, soma);
 
 let numero = 5;
 
-if(numero <= 0) {
-    console.log('O número não pode ser negativo ou nulo!')
-}
-else {
-
-    while (numero > 1 ) {
-        console.log(numero);
-        if(numero % 2 === 0) {
-            numero /= 2;
-        }
-        else {
-            numero = 3 * numero + 1;
-        }
+while (numero > 1 ) {
+    console.log(numero);
+    if(numero % 2 === 0) {
+        numero /= 2;
+    }
+    else {
+        numero = 3 * numero + 1;
     }
 }
-
 
 // Escreva um loop em Javascript
 // que gera uma lista com 100
 // número randomicos.
-
 let randomArr = [];
 for (let i = 0; i < 100; i++) {
     randomArr.push( Math.floor(Math.random() * 200) );
@@ -105,7 +97,7 @@ console.log(randomArr);
 let cara = 0;
 let coroa = 0;
 for (let i = 0; i < 1000; i++) {
-    Math.floor( Math.random() * 2) === 0 ? coroa += 1 : cara += 1;
+    Math.floor( Math.random() * 2) === 0 ? coroa++ : cara++;
 }
 console.log('O número de caras foi:', cara);
 console.log('O número de coroas foi:', coroa);

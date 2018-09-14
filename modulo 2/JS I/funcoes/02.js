@@ -43,11 +43,6 @@ function toBinary(numero) {
 }
 console.log(`O número 43 em binário é ${toBinary(43)} \n`);
 
-// result = 43 % 2 = 1; numero = 21.5
-// result = 21 % 2 = 1; numero = 10.75
-// result = 10 % 2 = 0; numero = 5.375
-// result = 5 % 2 = 1; 
-
 // Escreva uma função em Javascript
 // que recebe uma lista de números
 // e retorna o maior número da lista.

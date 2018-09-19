@@ -8,25 +8,15 @@ const $inputArea = document.querySelector('#cadastroInputArea');
 const $inputLevel = document.querySelectorAll('[name="level"]');
 const $inputNews = document.querySelector('#cadastroInputNews');
 const $submitButton = document.querySelector('.cadastro__button');
+const $body = document.querySelector('body');
 
 $submitButton.addEventListener('click', function(event) {
     event.preventDefault();
-    const optionSelect = $inputArea.options[$inputArea.selectedIndex];
-    const $body = document.querySelector('body');
     
     if ($inputName.value === undefined || $inputName.value === null ||
         $inputName.value.length === 0 || $inputName.value === ' ') {
-
         $inputName.focus();
-        /*
-        const warning = document.createElement('span');
-        const warningText = document.createTextNode('Por favor, insira um nome!');
-        warning.appendChild(warningText);
-        warning.classList.add('warning');
-        $inputName.parentElement.appendChild(warning);
-        */
         return false;
-
     }
 
     if ($inputEmail.value === undefined || $inputEmail.value === null ||
@@ -56,19 +46,6 @@ $submitButton.addEventListener('click', function(event) {
         $inputPhone.value.length === 0 || $inputPhone.value === ' ' || $inputPhone.value.match(/[A-Z]/gi)) {
         $inputPhone.focus();
         return false;
-    }
-
-    if (optionSelect.value === 'Front-End') {
-        $body.style.backgroundColor = 'lightblue';
-    } 
-    else if (optionSelect.value === 'Back-End') {
-        $body.style.backgroundColor = 'lightgreen';
-    } 
-    else if (optionSelect.value === 'UX Designer') {
-        $body.style.backgroundColor = 'pink';
-    } 
-    else if (optionSelect.value === 'UI Designer') {
-        $body.style.backgroundColor ='orange';
     }
 
     if ($inputLevel[0].checked) {
@@ -104,5 +81,30 @@ $submitButton.addEventListener('click', function(event) {
         return false;
     }
 
+    $body.style.backgroundColor = 'white';
+    // this.closest(x) vai pegar o elemento pai mais próximo que é um elemento x
+    this.closest('form').submit();
     return true;
 });
+
+$inputArea.addEventListener('change', function() {
+    const optionSelect = $inputArea.options[$inputArea.selectedIndex];
+
+    if (optionSelect.value === 'Front-End') {
+        $body.style.backgroundColor = 'lightblue';
+    } 
+    else if (optionSelect.value === 'Back-End') {
+        $body.style.backgroundColor = 'lightgreen';
+    } 
+    else if (optionSelect.value === 'UX Designer') {
+        $body.style.backgroundColor = 'pink';
+    } 
+    else if (optionSelect.value === 'UI Designer') {
+        $body.style.backgroundColor ='orange';
+    }
+});
+
+$inputEmailConfirm.addEventListener('paste', function(event) {
+    event.preventDefault();
+    return false;
+})

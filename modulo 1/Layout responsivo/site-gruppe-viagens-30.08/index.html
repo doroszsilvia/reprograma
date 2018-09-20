@@ -41,8 +41,10 @@
 
                 <section class="about__def">
                     <img src="img/sobre-01.png" alt="O que é o Gruppe?" class="img">
-                    <h2 class="article__title def__title">O que é o Gruppe?</h2>
-                    <p class="about__paragraph def__paragraph">Gruppe é um serviço de consultoria para todos os tipos de viajantes. Somos especializados em entender nossos clientes e montar o roteiro levando em consideração o seu perfil, quem vai com você, seu orçamento e outras informações relevantes!</p>
+                    <div class="about__main-text">
+                        <h2 class="article__title def__title">O que é o Gruppe?</h2>
+                        <p class="about__paragraph def__paragraph">Gruppe é um serviço de consultoria para todos os tipos de viajantes. Somos especializados em entender nossos clientes e montar o roteiro levando em consideração o seu perfil, quem vai com você, seu orçamento e outras informações relevantes!</p>
+                    </div>
                 </section>
 
                 <section class="about__how-works">
@@ -55,7 +57,7 @@
                             Se você gosta de aventura, se está viajando à trabalho, quanto tem para gastar etc.</p>
                     </div>
 
-                    <div class="how-works__div how-works__div_arrow"><img src="" alt=""></div>
+                    <div class="how-works__div how-works__div_arrow"><i class="fas fa-arrow-right fa-3x"></i></div>
 
                     <div class="how-works__div how-works__div_step">
                         <img src="img/passo-02.png" alt="Passo 2" class="img">
@@ -64,7 +66,7 @@
                             que se encaixa com suas especificações.</p>
                     </div>
 
-                    <div class="how-works__div how-works__div_arrow"><img src="" alt=""></div>
+                    <div class="how-works__div how-works__div_arrow"><i class="fas fa-arrow-right fa-3x"></i></div>
 
                     <div class="how-works__div how-works__div_step">
                         <img src="img/passo-03.png" alt="Passo 3" class="img">
@@ -77,20 +79,20 @@
             </article>
 
             <article class="our-services">
-                <h2 class="article__title">Nossos serviços</h2>
+                <h2 class="article__title our-services__title">Nossos serviços</h2>
 
                 <section class="our-services__consultoria">
                     <h3>Consultoria</h3>
                     <img src="img/servicos-consultoria.png" alt="Consultoria" class="img">
                     <p class="our-services__paragraph">Não sabe para onde viajar? A consultoria visa selecionar os melhores destinos do Brasil e do mundo para a sua próxima viagem</p>
-                    <a href="#" class="btn btn_yellow">Saber mais</a>
+                    <a href="#" class="btn btn_yellow our-services__btn">Saber mais</a>
                 </section>
 
                 <section class="our-services__roteiro">
                     <h3>Roteiro</h3>
                     <img src="img/servicos-roteiros.png" alt="Roteiros" class="img">
                     <p class="our-services__paragraph">Sua viagem está chegando, mas não sabe o que visitar e onde comer? Nós temos uma equipe de consultores apaixonada por viagem. Sabemos como montar o roteiro para cada perfil de viajante.</p>
-                    <a href="#" class="btn btn_yellow">Saber mais</a>
+                    <a href="#" class="btn btn_yellow our-services__btn">Saber mais</a>
                 </section>
             </article>
 
@@ -120,11 +122,15 @@
                 <h2 class="article__title">Alguma dúvida? Fale com a gente!</h2>
                 
                 <form action="" method="post" class="contact__form">
-                    <label for="nome" class="form__label">Nome</label>
-                    <input type="text" name="nome" class="form__input form__input_contact" required>
+                    <div class="form__name">
+                        <label for="nome" class="form__label form__label_name">Nome</label>
+                        <input type="text" name="nome" class="form__input form__input_contact form__input_name" required>
+                    </div>
 
-                    <label for="email" class="form__label">E-mail</label>
-                    <input type="email" name="nome" class="form__input form__input_contact" required>
+                    <div class="form__email">
+                        <label for="email" class="form__label form__label_email">E-mail</label>
+                        <input type="email" name="nome" class="form__input form__input_contact form__input_email" required>
+                    </div>
 
                     <label for="assunto" class="form__label">Assunto</label>
                     <input type="text" name="assunto" class="form__input form__input_contact" required>

@@ -1,9 +1,7 @@
 const tweetarButton = document.querySelector('.tweet-composer__button');
 const timeline = document.querySelector('.tweets-timeline');
 const tweetInput = document.getElementById('tweetComposerInput');
-// constantes relacionadas a data:
-const months = ['jan', 'fev', 'mar', 'abr', 'mai', 'jun', 'jul', 'ago', 'set', 'out', 'nov', 'dez'];
-const date = new Date();
+const counter = document.getElementById('tweetComposerCounter');
 
 tweetarButton.addEventListener('click', function(event) {
     event.preventDefault();
@@ -20,11 +18,16 @@ tweetarButton.addEventListener('click', function(event) {
 
     const tweetHeader = document.createElement('div');
     tweetHeader.className = 'tweets-timeline__header';
-    const tweetDate = `${date.getDate()} de ${months[ date.getMonth() ]}`;
+
+    const date = new Date();
+    const month = date.toLocaleString('pt-br', 
+        { month: 'short', hour: '2-digit', minute: '2-digit', second: '2-digit'}
+    );
+
     tweetHeader.innerHTML = `
         <span class="tweets-timeline__name">Mariana</span>
         <span class="tweets-timeline__username">@marianazangrossi</span>
-        <span class="tweets-timeline__date">${tweetDate}</span>
+        <span class="tweets-timeline__date">${date.getDate()} de ${month}</span>
     `;
 
     const tweetText = document.createElement('p');
@@ -42,6 +45,8 @@ tweetarButton.addEventListener('click', function(event) {
     tweet.appendChild(tweetFooter);
 
     timeline.insertBefore(tweet, timeline.children[0]);
+    ,
+    
 
     tweetInput.value = '';
 
@@ -54,17 +59,28 @@ tweetarButton.addEventListener('click', function(event) {
 
 });
 
-tweetInput.addEventListener('keyup', function(event) {
-    const counter = document.getElementById('tweetComposerCounter');
+tweetInput.addEventListener('keyup', function() {
+    const maxLength = 280;
+    tweetarButton.disabled = false;
 
-    if (tweetInput.value.length > 280 ) {
-        tweetInput.value = tweetInput.value.substring(0, 280);
-        return false;
+    // if (this.value.length > maxLength ) {
+    //     tweetarButton.disabled = true;
+    //     counter.style.color = 'red'
+    //     this.value = this.value.substring(0, maxLength);
+    //     return false;
+    // }
+
+    counter.innerHTML = maxLength - this.value.length;
+
+    if (counter.textContent <= 15 && counter.textContent >= 0) {
+        counter.style.color = 'orange';
+        tweetarButton.disabled = false;
     }
-    
-    counter.innerHTML = (280 - tweetInput.value.length);
-
-    if (counter.textContent <= 15) counter.style.color = 'red';
-    else counter.style.color = 'white';
-
+    else if (counter.textContent < 0) {
+        counter.style.color = 'red';
+        tweetarButton.disabled = true;
+    }
+    else {
+        counter.style.color = 'white';
+    }
 });

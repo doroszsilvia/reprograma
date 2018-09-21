@@ -18,7 +18,7 @@ body {
 
 .tweet-composer{
     position: relative;
-    background-color: slategray;
+    background-color: #00aced;
     padding: 10px 20px;
 }
 
@@ -51,10 +51,12 @@ body {
     font-size: 16px;
     cursor: pointer;
     transition: 0.3s;
+    background-color: #0084b4;
+    color: white;
 }
 
 .tweet-composer__button:hover{
-    background-color: #e6ecf0;
+    background-color: #1dcaff;
     transition: 0.3s;
 }
 
@@ -72,6 +74,7 @@ body {
     margin: 1.3px 0;
     border-radius: 1px;
     padding: 10px 20px;
+    word-break: break-all;
 }
 
 .tweets-timeline__name{

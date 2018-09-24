@@ -3,8 +3,18 @@
 // decimal e o transforma
 // em hexadecimal. Não
 // use a funcao .toString().
+function decToHex(num) {
+    let divisionResult = [];
 
+    do {
+        num = num / 16;
+        divisionResult.push( parseInt(num) );
+    } 
+    while(parseInt(num) >= 16)
+    console.log(divisionResult);
+}
 
+decToHex(438);
 
 
 // Escreva uma funcao que 

@@ -1,0 +1,150 @@
+* {
+    box-sizing: border-box;
+}
+
+.flex{
+    display: flex;
+}
+
+.body{
+    height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(-90deg,#8ec5fc, #d2adf5);
+    margin: 0;
+    font-family: "Open Sans", sans-serif;
+    justify-content: center;
+    align-items: center;
+}
+
+.pseudo-body {
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+}
+
+.main{
+    flex-direction: column;
+    width: 400px;
+    height: 600px;
+    background-color: white;
+    align-items: center;
+    position: relative;
+    z-index: 999;
+}
+
+.header{
+    border-bottom: 1px solid rgba(128, 128, 128, 0.493);
+    width: 100%;
+    align-content: center;
+    justify-content: center;
+}
+
+.title{
+    font-size: 20px;
+    padding: 2% 0;
+    text-align: center;
+}
+
+.form{
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.form__input {
+    height: 70px;
+    width: 100%;
+    font-size: 16px;
+    padding: 0 60px;
+    margin-top: 25px;
+    border: none;
+}
+
+.button{
+    padding: 6% 0;
+    width: 100%;
+    background-color: #ba7af8;
+    border: none;
+    text-transform: uppercase;
+    color: white;
+}
+
+.list-section{
+    width: 100%;
+    overflow: auto;
+    height: 360px;
+    position: absolute;
+    top: 256px;
+}
+
+.list {
+    list-style: none;
+    align-items: left;
+    padding-left: 0;
+}
+.list__item{
+    width: 100%;   
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 30px;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.294);    
+    word-break: break-all;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+}
+
+.list__item_model {
+    width: 100%;
+    padding: 3% 12%;
+    background-color: #ffd1fc;
+    height: 60px;
+}
+
+.button-delete{
+    border: none;
+    background: none;
+    width: 30px;
+    height: 30px;
+}
+
+.warning-text {
+    font-style: italic;
+    color: red;
+    font-size: 14px;
+    height: 25px;
+    padding: 4px 0;
+}
+
+.item-checked{
+    text-decoration: line-through;
+    color: gray;
+}
+
+.selectedButton {
+    border-radius: 5px;
+    animation-duration: 0.3s;
+    animation-name: slowShowing;
+    animation-fill-mode: forwards;
+}
+
+@keyframes slowShowing {
+    from { border: 1.8px solid rgba(107, 163, 255, 0); }
+    to { border: 1.8px solid rgba(107, 163, 255, 1); }
+}
+
+@media (max-width: 768px) {
+    .main {
+        width: 300px;
+    }
+    .list {
+        margin: 0;
+    }
+}
+
+@media (max-width: 425px) {
+    .form__input {
+        padding: 0 40px;
+    }
+}
+
+

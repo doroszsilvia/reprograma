@@ -1,0 +1,7 @@
+@function adapta-tamanho($tam) {
+    @return $tam * $font-size;
+}
+
+@function cor($color-name) {
+    @return map-get($cores, $color-name);
+}

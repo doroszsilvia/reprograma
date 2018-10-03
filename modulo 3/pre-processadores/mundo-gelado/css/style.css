@@ -1,4 +1,4 @@
-.destination--siberia__img, .destination--groenlandia__img, .destination--antartida__img {
+.banner, .destination, .destination--siberia__img, .destination--groenlandia__img, .destination--antartida__img {
   height: auto;
   display: block;
 }
@@ -28,7 +28,7 @@ html {
 
 body {
   font-family: Nunito;
-  font-size: 16px;
+  font-size: 10px;
 }
 
 ul, li {
@@ -37,7 +37,7 @@ ul, li {
 
 a {
   text-decoration: none;
-  color: #465c6a;
+  color: #829dad;
 }
 
 a:hover {
@@ -61,6 +61,30 @@ a:hover {
   transition: all 1s;
 }
 
+.primaria {
+  color: #829dad;
+}
+
+.auxiliar {
+  color: #000;
+}
+
+.branco {
+  color: #fff;
+}
+
+.original {
+  font-family: "Arial";
+}
+
+.estilizada {
+  font-family: "Verdana";
+}
+
+.rainha {
+  font-family: "Times new Roman";
+}
+
 .btn {
   color: #fff;
   text-transform: uppercase;
@@ -72,7 +96,7 @@ a:hover {
 }
 
 .btn--primary {
-  background-color: #465c6a;
+  background-color: #829dad;
 }
 
 .btn--primary:hover {
@@ -80,15 +104,50 @@ a:hover {
   color: #fff;
 }
 
-.about {
-  background-color: rgba(22, 22, 22, 0.8);
-  text-align: center;
-  padding: 40px;
-  color: #fff;
+.nav {
+  background: #829dad;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 99;
 }
 
-.about__title {
-  margin-bottom: 20px;
+.nav__menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  height: 85px;
+}
+
+.nav__link {
+  color: #fff;
+  margin-right: 50px;
+}
+
+.nav__link:hover {
+  color: rgba(130, 157, 173, 0.8);
+}
+
+.nav__mobile {
+  display: none;
+}
+
+@media (max-width: 420px) {
+  .nav {
+    background-color: #fff;
+  }
+  .nav__link {
+    display: none;
+  }
+  .nav__mobile {
+    display: block;
+  }
 }
 
 .banner {
@@ -110,6 +169,13 @@ a:hover {
   font-weight: 100;
   padding-top: 80px;
   letter-spacing: 8px;
+}
+
+@media screen and (max-width: 980px) {
+  .banner__title {
+    font-size: 60px;
+    width: 100%;
+  }
 }
 
 @media (max-width: 850px) {
@@ -149,6 +215,17 @@ a:hover {
   }
 }
 
+.about {
+  background-color: rgba(22, 22, 22, 0.8);
+  text-align: center;
+  padding: 40px;
+  color: #fff;
+}
+
+.about__title {
+  margin-bottom: 20px;
+}
+
 .destination {
   padding: 80px 0;
 }
@@ -156,7 +233,7 @@ a:hover {
 .destination__border {
   width: 30px;
   height: 120px;
-  background-color: #465c6a;
+  background-color: #829dad;
   display: block;
 }
 
@@ -211,7 +288,7 @@ a:hover {
 }
 
 .destination_paragraph {
-  color: rgba(70, 92, 106, 0.5);
+  color: rgba(130, 157, 173, 0.5);
 }
 
 .destination_paragraph--groenlandia {
@@ -283,51 +360,5 @@ a:hover {
 
 .footer__twitter:hover, .footer__facebook:hover, .footer__youtube:hover {
   opacity: 1;
-}
-
-.nav {
-  background: #465c6a;
-  position: fixed;
-  width: 100%;
-  top: 0;
-  z-index: 99;
-}
-
-.nav__menu {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
-  height: 85px;
-}
-
-.nav__link {
-  color: #fff;
-  margin-right: 50px;
-}
-
-.nav__link:hover {
-  color: rgba(70, 92, 106, 0.8);
-}
-
-.nav__mobile {
-  display: none;
-}
-
-@media (max-width: 420px) {
-  .nav {
-    background-color: #fff;
-  }
-  .nav__link {
-    display: none;
-  }
-  .nav__mobile {
-    display: block;
-  }
 }
 /*# sourceMappingURL=style.css.map */

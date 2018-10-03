@@ -1,3 +1,4 @@
+
 .destination {
     padding: 80px 0;
     &__border {
@@ -73,7 +74,6 @@
       &--groenlandia,
       &--antartida {
         @include height_display;
-
         &__img{
             max-height: 100%;
         }

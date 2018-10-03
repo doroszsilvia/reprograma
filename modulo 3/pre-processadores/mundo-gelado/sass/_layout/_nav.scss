@@ -4,14 +4,12 @@
     width: 100%;
     top: 0;
     z-index: 99;
-
     &__menu {
       display: flex;
       align-items: center;
       justify-content: flex-end;
       height: 85px;
     }
-    
     &__link {
       color: $cor-branca;
       margin-right: 50px;
@@ -33,3 +31,5 @@
         }
     }
   }
+  
+  

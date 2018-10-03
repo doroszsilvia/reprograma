@@ -3,7 +3,7 @@
 }
 
 html {
-    font-size: $font-size;
+    font-size: $font-size; /* definir uma font-size padrão */
 }
 
 body {
@@ -24,10 +24,12 @@ li {
     list-style: none;
 }
 
+/* define que as imagens tem que ter o tamanho máximo da div mãe */
 .img-responsive {
     width: 100%;
 }
 
+/* define o tamanho da caixa */
 .container {
     margin: 0 auto;
     width: 100%;

@@ -1,51 +1,5 @@
-/*Variaveis*/
-/* Mixin com parametros */
-/* Mixin sem parametros */
-/*
-@mixin flexbox{
-    display: flex;
-    -webkit-display: flex;
-    -ms-display: flex;
-    -moz-display: flex;
-    -o-display: flex;
-}*/
-* {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-}
-
-html {
-  font-size: 10px;
-}
-
-body {
-  font-family: 'Montserrat', Arial, Helvetica, sans-serif;
-  margin: 0;
-}
-
-a {
-  text-decoration: none;
-  color: inherit;
-}
-
-ul {
-  padding: 0;
-}
-
-li {
-  list-style: none;
-}
-
-.img-responsive {
-  width: 100%;
-}
-
-.container {
-  margin: 0 auto;
-  width: 100%;
-  max-width: 960px;
-}
-
+@charset "UTF-8";
+/* --- BOTAO --- */
 .btn {
   text-transform: uppercase;
   font-weight: bold;
@@ -84,6 +38,47 @@ li {
   margin: 0 auto;
 }
 
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+  /* definir uma font-size padrão */
+}
+
+body {
+  font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  padding: 0;
+}
+
+li {
+  list-style: none;
+}
+
+/* define que as imagens tem que ter o tamanho máximo da div mãe */
+.img-responsive {
+  width: 100%;
+}
+
+/* define o tamanho da caixa */
+.container {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 960px;
+}
+
+/* --- NAV --- */
 .navegacao {
   background-color: #674582;
   color: white;
@@ -101,16 +96,13 @@ li {
 }
 
 .navegacao__box {
-  -webkit-display: flex;
-  -ms-display: flex;
-  -moz-display: flex;
-  -o-display: flex;
   display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+  -webkit-box-orient: initial;
+  -webkit-box-direction: initial;
+      -ms-flex-direction: initial;
+          flex-direction: initial;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -171,39 +163,33 @@ li {
   margin: 0 1rem;
 }
 
-@media (min-width: 768px) {
+@media screen and (min-width: 768px) {
   .navegacao__itens {
     position: static;
-    -webkit-display: flex;
-    -ms-display: flex;
-    -moz-display: flex;
-    -o-display: flex;
     display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -webkit-box-align: normal;
-        -ms-flex-align: normal;
-            align-items: normal;
-    -webkit-box-pack: normal;
-        -ms-flex-pack: normal;
-            justify-content: normal;
+    -webkit-box-orient: initial;
+    -webkit-box-direction: initial;
+        -ms-flex-direction: initial;
+            flex-direction: initial;
+    -webkit-box-align: initial;
+        -ms-flex-align: initial;
+            align-items: initial;
+    -webkit-box-pack: initial;
+        -ms-flex-pack: initial;
+            justify-content: initial;
     padding: 0;
     width: auto;
   }
   .navegacao__itens ul {
-    -webkit-display: flex;
-    -ms-display: flex;
-    -moz-display: flex;
-    -o-display: flex;
     display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
+    -webkit-box-orient: initial;
+    -webkit-box-direction: initial;
+        -ms-flex-direction: initial;
+            flex-direction: initial;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
@@ -224,7 +210,7 @@ li {
   }
 }
 
-@media (min-width: 1440px) {
+@media screen and (min-width: 1440px) {
   .navegacao__box {
     max-width: 80%;
   }
@@ -234,6 +220,7 @@ li {
   }
 }
 
+/* --- HEADER --- */
 .header {
   min-height: 80vh;
   height: 500px;
@@ -242,28 +229,25 @@ li {
   background-size: cover;
   background-position: center 14%;
   background-repeat: no-repeat;
-  -webkit-display: flex;
-  -ms-display: flex;
-  -moz-display: flex;
-  -o-display: flex;
   display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+  -webkit-box-orient: initial;
+  -webkit-box-direction: initial;
+      -ms-flex-direction: initial;
+          flex-direction: initial;
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: flex-end;
-  -webkit-box-pack: normal;
-      -ms-flex-pack: normal;
-          justify-content: normal;
+  -webkit-box-pack: initial;
+      -ms-flex-pack: initial;
+          justify-content: initial;
   text-align: center;
   padding: 11rem 2rem 5rem 2rem;
   color: white;
 }
 
-@media (min-width: 768px) {
+@media screen and (min-width: 768px) {
   .header {
     min-height: 75vh;
     text-align: left;
@@ -271,7 +255,7 @@ li {
   }
 }
 
-@media (min-width: 1440px) {
+@media screen and (min-width: 1440px) {
   .header {
     min-height: 90vh;
   }
@@ -283,9 +267,21 @@ li {
   font-weight: 900;
 }
 
-@media (min-width: 768px) {
+@media screen and (min-width: 768px) {
   .principal__titulo {
     font-size: 2.9rem;
+  }
+  .principal__titulo__sub {
+    font-size: 1.8rem;
+  }
+  .principal__titulo__btn {
+    margin: 0;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .principal__titulo {
+    max-width: 650px;
   }
 }
 
@@ -295,24 +291,25 @@ li {
   font-size: 1.5rem;
 }
 
-@media (min-width: 768px) {
+@media screen and (min-width: 768px) {
+  .principal__titulo {
+    font-size: 2.9rem;
+  }
   .principal__sub {
     font-size: 1.8rem;
   }
-}
-
-@media (min-width: 768px) {
   .principal__btn {
     margin: 0;
   }
 }
 
-@media (min-width: 1024px) {
+@media screen and (min-width: 1440px) {
   .principal {
     max-width: 650px;
   }
 }
 
+/* --- SECTION MARAVILHOSAS --- */
 .maravilhosas__titulo {
   font-family: 'Roboto Slab', Arial, Helvetica, sans-serif;
   color: #674582;
@@ -321,19 +318,16 @@ li {
 }
 
 .maravilhosas__box {
-  -webkit-display: flex;
-  -ms-display: flex;
-  -moz-display: flex;
-  -o-display: flex;
   display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-align: normal;
-      -ms-flex-align: normal;
-          align-items: normal;
+  -webkit-box-orient: initial;
+  -webkit-box-direction: initial;
+      -ms-flex-direction: initial;
+          flex-direction: initial;
+  -webkit-box-align: initial;
+      -ms-flex-align: initial;
+          align-items: initial;
   -ms-flex-pack: distribute;
       justify-content: space-around;
   -ms-flex-wrap: wrap;
@@ -342,7 +336,7 @@ li {
   color: #674582;
 }
 
-@media (min-width: 768px) {
+@media screen and (min-width: 768px) {
   .maravilhosas__box > div {
     max-width: 200px;
     margin: 5rem;
@@ -373,28 +367,62 @@ li {
           box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
 }
 
-@media (min-width: 768px) {
+@media screen and (min-width: 768px) {
   .maravilhosas__perfil p {
     font-size: 1.5rem;
     margin-top: 1rem;
   }
 }
 
-@media (min-width: 768px) {
+@media screen and (min-width: 768px) {
   .maravilhosas {
     padding: 4rem 0;
   }
 }
 
-.rodape {
-  background-color: #323534;
-  color: white;
-  font-size: .9rem;
-  -webkit-display: flex;
-  -ms-display: flex;
-  -moz-display: flex;
-  -o-display: flex;
+/** ---- PERSONALIDADE ---- **/
+/* --- HEADER --- */
+.header-personalidade {
   display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-size: cover;
+  padding: 0 2rem;
+  color: white;
+  min-height: 80vh;
+  height: 500px;
+}
+
+.header-personalidade__titulo {
+  text-align: center;
+  font-size: 2.6rem;
+  text-transform: uppercase;
+}
+
+@media screen and (min-width: 768px) {
+  .header-personalidade {
+    padding: 0 20rem;
+  }
+  .header-personalidade__titulo {
+    font-size: 3.5rem;
+    text-align: center;
+  }
+}
+
+/* --- PEFIL DIVA--- */
+.secao-diva {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
@@ -403,18 +431,210 @@ li {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: normal;
-      -ms-flex-pack: normal;
-          justify-content: normal;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 5rem 2rem;
+  margin: 0 auto;
+}
+
+.secao-diva__titulo {
+  text-align: center;
+  font-family: 'Roboto Slab', Arial, Helvetica, sans-serif;
+  font-size: 2rem;
+  color: #674582;
+}
+
+.secao-diva__titulo_esq {
+  margin-right: auto;
+}
+
+.secao-diva p {
+  color: #63458a;
+  font-size: 1.6rem;
+  line-height: 1.5;
+}
+
+.secao-diva__introducao {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: initial;
+      -ms-flex-pack: initial;
+          justify-content: initial;
+}
+
+.secao-diva__foto-perfil {
+  max-width: 18rem;
+  margin: 1rem;
+  background-color: #63458a;
+}
+
+.secao-diva__citacao p {
+  font-weight: bold;
+  border: 1px solid #63458a;
+  text-align: center;
+  padding: 1rem;
+  font-size: 1.7rem;
+}
+
+.secao-diva__historia {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: initial;
+      -ms-flex-pack: initial;
+          justify-content: initial;
+  flex-direction: column;
+  align-items: center;
+  padding: 5rem 0;
+}
+
+@media screen and (min-width: 1024px) {
+  .secao-diva__introducao {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    margin: 3rem 0;
+  }
+  .secao-diva__foto-perfil {
+    max-width: 100%;
+    margin: 0 4rem;
+  }
+  .secao-diva p {
+    font-size: 1.7rem;
+  }
+  .secao-diva__citacao p {
+    font-size: 2.5rem;
+    padding: 4rem;
+  }
+}
+
+/* --- AUTORA --- */
+.secao-autora {
+  background-color: #e4b7e5;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: initial;
+  -webkit-box-direction: initial;
+      -ms-flex-direction: initial;
+          flex-direction: initial;
+  -webkit-box-align: initial;
+      -ms-flex-align: initial;
+          align-items: initial;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.secao-autora > div {
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  padding: 2rem 0;
+}
+
+@media screen and (min-width: 1024px) {
+  .secao-autora > div {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    text-align: left;
+    padding: 0;
+  }
+}
+
+.secao-autora__foto {
+  max-width: 150px;
+}
+
+.secao-autora__dados {
+  color: #63458a;
+  font-size: 1.6rem;
+  line-height: 1.5;
+  margin-top: 1rem;
+}
+
+@media screen and (min-width: 1024px) {
+  .secao-autora__dados {
+    margin: 0 3rem;
+  }
+}
+
+.secao-autora__dados p {
+  margin: 0;
+}
+
+.secao-autora a {
+  font-style: italic;
+  text-decoration: underline;
+}
+
+.secao-cta {
+  text-align: center;
+  padding: 4rem 0;
+}
+
+/* --- FOOTER --- */
+.rodape {
+  background-color: #323534;
+  color: white;
+  font-size: .9rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: initial;
+      -ms-flex-pack: initial;
+          justify-content: initial;
   padding-top: .8rem;
 }
 
 .rodape__principal {
-  -webkit-display: flex;
-  -ms-display: flex;
-  -moz-display: flex;
-  -o-display: flex;
   display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
@@ -453,16 +673,13 @@ li {
 }
 
 .rodape__redes-sociais a {
-  -webkit-display: flex;
-  -ms-display: flex;
-  -moz-display: flex;
-  -o-display: flex;
   display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+  -webkit-box-orient: initial;
+  -webkit-box-direction: initial;
+      -ms-flex-direction: initial;
+          flex-direction: initial;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -483,22 +700,19 @@ li {
 }
 
 .rodape__redes-sociais span {
-  -webkit-display: flex;
-  -ms-display: flex;
-  -moz-display: flex;
-  -o-display: flex;
   display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-align: normal;
-      -ms-flex-align: normal;
-          align-items: normal;
-  -webkit-box-pack: normal;
-      -ms-flex-pack: normal;
-          justify-content: normal;
+  -webkit-box-orient: initial;
+  -webkit-box-direction: initial;
+      -ms-flex-direction: initial;
+          flex-direction: initial;
+  -webkit-box-align: initial;
+      -ms-flex-align: initial;
+          align-items: initial;
+  -webkit-box-pack: initial;
+      -ms-flex-pack: initial;
+          justify-content: initial;
   font-size: 1.5rem;
 }
 
@@ -510,16 +724,13 @@ li {
   text-align: center;
 }
 
-@media (min-width: 768px) {
+@media screen and (min-width: 768px) {
   .rodape {
     padding-top: 0;
   }
   .rodape__principal {
-    -webkit-display: flex;
-    -ms-display: flex;
-    -moz-display: flex;
-    -o-display: flex;
     display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
@@ -538,268 +749,5 @@ li {
   .rodape__navegacao > li {
     font-size: 1.5rem;
   }
-}
-
-.header-personalidade {
-  -webkit-display: flex;
-  -ms-display: flex;
-  -moz-display: flex;
-  -o-display: flex;
-  display: -webkit-box;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  background-size: cover;
-  padding: 0 2rem;
-  color: white;
-  min-height: 80vh;
-  height: 500px;
-}
-
-.header-personalidade__titulo {
-  text-align: center;
-  font-size: 2.6rem;
-  text-transform: uppercase;
-}
-
-@media (min-width: 768px) {
-  .header-personalidade {
-    padding: 0 20rem;
-    -webkit-display: flex;
-    -ms-display: flex;
-    -moz-display: flex;
-    -o-display: flex;
-    display: -webkit-box;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -webkit-box-align: end;
-        -ms-flex-align: end;
-            align-items: flex-end;
-    -webkit-box-pack: normal;
-        -ms-flex-pack: normal;
-            justify-content: normal;
-  }
-  .header-personalidade__titulo {
-    font-size: 3.5rem;
-    text-align: center;
-  }
-}
-
-.secao-diva {
-  -webkit-display: flex;
-  -ms-display: flex;
-  -moz-display: flex;
-  -o-display: flex;
-  display: -webkit-box;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  padding: 5rem 2rem;
-  margin: 0 auto;
-}
-
-.secao-diva__titulo {
-  text-align: center;
-  font-family: 'Roboto Slab', Arial, Helvetica, sans-serif;
-  font-size: 2rem;
-  color: #674582;
-}
-
-.secao-diva__titulo_esq {
-  margin-right: auto;
-}
-
-.secao-diva p {
-  color: #63458a;
-  font-size: 1.6rem;
-  line-height: 1.5;
-}
-
-@media (min-width: 1024px) {
-  .secao-diva p {
-    font-size: 1.7rem;
-  }
-}
-
-.secao-diva__introducao {
-  -webkit-display: flex;
-  -ms-display: flex;
-  -moz-display: flex;
-  -o-display: flex;
-  display: -webkit-box;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: normal;
-      -ms-flex-pack: normal;
-          justify-content: normal;
-}
-
-.secao-diva__foto-perfil {
-  max-width: 18rem;
-  margin: 1rem;
-  background-color: #63458a;
-}
-
-.secao-diva__citacao p {
-  font-weight: bold;
-  border: 1px solid #63458a;
-  text-align: center;
-  padding: 1rem;
-  font-size: 1.7rem;
-}
-
-.secao-diva__historia {
-  -webkit-display: flex;
-  -ms-display: flex;
-  -moz-display: flex;
-  -o-display: flex;
-  display: -webkit-box;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: normal;
-      -ms-flex-pack: normal;
-          justify-content: normal;
-  flex-direction: column;
-  align-items: center;
-  padding: 5rem 0;
-}
-
-@media (min-width: 1024px) {
-  .secao-diva__introducao {
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    margin: 3rem 0;
-  }
-  .secao-diva__foto-perfil {
-    max-width: 100%;
-    margin: 0 4rem;
-  }
-  .secao-diva__citacao p {
-    font-size: 2.5rem;
-    padding: 4rem;
-  }
-}
-
-.secao-autora {
-  background-color: #e4b7e5;
-  -webkit-display: flex;
-  -ms-display: flex;
-  -moz-display: flex;
-  -o-display: flex;
-  display: -webkit-box;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-align: normal;
-      -ms-flex-align: normal;
-          align-items: normal;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-.secao-autora > div {
-  text-align: center;
-  -webkit-display: flex;
-  -ms-display: flex;
-  -moz-display: flex;
-  -o-display: flex;
-  display: -webkit-box;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  padding: 2rem 0;
-}
-
-.secao-autora__foto {
-  max-width: 150px;
-}
-
-.secao-autora__dados {
-  color: #63458a;
-  font-size: 1.6rem;
-  line-height: 1.5;
-  margin-top: 1rem;
-}
-
-@media (min-width: 1024px) {
-  .secao-autora__dados {
-    margin: 0 3rem;
-  }
-}
-
-.secao-autora a {
-  font-style: italic;
-  text-decoration: underline;
-}
-
-@media (min-width: 1024px) {
-  .secao-autora > div {
-    -webkit-display: flex;
-    -ms-display: flex;
-    -moz-display: flex;
-    -o-display: flex;
-    display: -webkit-box;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -webkit-box-align: normal;
-        -ms-flex-align: normal;
-            align-items: normal;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    text-align: left;
-    padding: 0;
-  }
-}
-
-.secao-cta {
-  text-align: center;
-  padding: 4rem 0;
 }
 /*# sourceMappingURL=style.css.map */

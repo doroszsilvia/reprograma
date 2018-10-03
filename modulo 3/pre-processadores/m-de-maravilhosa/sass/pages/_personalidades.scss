@@ -1,6 +1,8 @@
-// HEADER PERSONALIDADE
+
+/** ---- PERSONALIDADE ---- **/
+/* --- HEADER --- */
 .header-personalidade {
-    @include flexbox(column, flex-end, center);
+    @include flexbox(row, flex-end, center);
     background-size: cover;
     padding: 0 2rem;
     color: white;
@@ -12,11 +14,8 @@
         font-size: 2.6rem;
         text-transform: uppercase;
     }
-
-    @media (min-width: 768px) {
+    @include responsivo(tablet) {
         padding: 0 20rem;
-        @include flexbox($align-items: flex-end);
-
         &__titulo {
             font-size: 3.5rem;
             text-align: center;
@@ -24,12 +23,11 @@
     }
 }
 
-// SEÇÃO DIVA
+/* --- PEFIL DIVA--- */
 .secao-diva {
     @include flexbox(column, center, center);
     padding: 5rem 2rem;
     margin: 0 auto;
-
     &__titulo {
         text-align: center;
         font-family: 'Roboto Slab', Arial, Helvetica, sans-serif;
@@ -39,27 +37,20 @@
             margin-right: auto;
         }
     }
-
     p {
         color: #63458a;
         font-size: 1.6rem;
         line-height: 1.5;
-        @media (min-width: 1024px) {
-                font-size: 1.7rem;
-        }
     }
-
     &__introducao {
         @include flexbox(column, center);
 
     }
-
     &__foto-perfil {
         max-width: 18rem;
         margin: 1rem;
         background-color: #63458a;
     }
-
     &__citacao p {
         font-weight: bold;
         border: 1px solid #63458a;
@@ -67,7 +58,6 @@
         padding: 1rem;
         font-size: 1.7rem;
     }
-
     &__historia {
         @include flexbox(column, center);
         flex-direction: column;
@@ -75,17 +65,18 @@
         padding: 5rem 0;
     }
 
-    @media (min-width: 1024px) {
+    @include responsivo(desktop) { 
         &__introducao {
             flex-direction: row;
             margin: 3rem 0;
         }
-        
         &__foto-perfil {
             max-width: 100%;
             margin: 0 4rem;
         }
-
+        & p {
+            font-size: 1.7rem;
+        }
         &__citacao p {
             font-size: 2.5rem;
             padding: 4rem;
@@ -93,28 +84,34 @@
     }
 }
 
-// SEÇÃO AUTORA
+/* --- AUTORA --- */
 .secao-autora {
     background-color: #e4b7e5;
     @include flexbox($justify-content: center);
-
-    > div {
+     & > div {
         text-align: center;
         @include flexbox(column, center, space-around);
         padding: 2rem 0;
+        @include responsivo(desktop) {
+            @include flexbox($flex-direction:row, $justify-content: center, $align-items: center);
+            text-align: left;
+            padding: 0;
+        }
     }
 
     &__foto {
         max-width: 150px;
     }
-
     &__dados {
         color: #63458a;
         font-size: 1.6rem;
         line-height: 1.5;
         margin-top: 1rem;
-        @media (min-width: 1024px) {
+        @include responsivo(desktop) {
             margin: 0 3rem;
+        }
+        & p {
+            margin: 0;
         }
     }
 
@@ -122,19 +119,10 @@
         font-style: italic;
         text-decoration: underline;
     }
-
-    @media (min-width: 1024px) {
-        & > div {
-            @include flexbox($flex-direction:row, $justify-content: center);
-            text-align: left;
-            padding: 0;
-        }
-    }
     
 }
-
-// BOTÃO VER TODAS ELAS
 .secao-cta {
     text-align: center;
     padding: 4rem 0;
 }
+

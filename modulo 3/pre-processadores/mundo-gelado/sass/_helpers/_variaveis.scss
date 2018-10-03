@@ -1,4 +1,17 @@
 // Variáveis
-$cor-primaria: darken(#829dad, 25%);
+$cor-primaria: lighten(#829dad, 0%);
 $cor-branca: #fff;
 
+$cores:(
+    primaria: lighten(#829dad, 0%),
+    auxiliar: #000,
+    branco: #fff
+);
+
+$font-size: 10px;
+
+$fontes: (
+    original: 'Arial',
+    estilizada: 'Verdana',
+    rainha: 'Times new Roman'
+);

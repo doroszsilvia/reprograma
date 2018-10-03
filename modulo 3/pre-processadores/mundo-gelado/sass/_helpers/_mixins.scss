@@ -1,14 +1,36 @@
-@mixin height_display {
+@mixin height_display{
     height: auto;
     display: block;
 }
   
-@mixin rgba_opacity($cor: $cor-primaria, $opacidade: 1) {
-    color: rgba($cor, $opacidade);
+@mixin rgba_opacity($cor: $cor-primaria, $opacidade: 1){
+color: rgba($cor, $opacidade);
 }
   
-@mixin borda-arredondada($raio: 5px) {
-    border-radius: $raio;
-    -moz-border-radius: $raio; 
-    -webkit-border-radius: $raio;
+@mixin borda-arredondada($raio: 5px){
+border-radius: $raio;
+-moz-border-radius: $raio; 
+-webkit-border-radius: $raio;
+}
+
+@mixin adapta-tamanho($tam) {
+    height: $tam * $font-size;
+}
+
+@mixin responsivo($tipo) {
+    @if $tipo == phone {
+        @media screen and (max-width:600px) {
+            @content;
+        }
+    }
+    @else if $tipo == tablet {
+        @media screen and (max-width:980px) {
+            @content;
+        }
+    }
+    @else {
+        @media screen and (max-width: 1200px) {
+            @content;
+        }
+    }
 }
